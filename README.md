@@ -9,4 +9,6 @@ It is based on the WordPress WooCommerce plugin and their Storefront e-commerce 
 
 Storefront is the default standard for WooCommerce and we are adapting it to the Rough Hands needs using this current child theme.
 
-This child theme, again, was inspired by another official child theme, Boutique. 
+This child theme, again, was inspired by another official child theme, Boutique.
+
+The idea is to stick to the standards whenever possible for better performance and future compatibility.
