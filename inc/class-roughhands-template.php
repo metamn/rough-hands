@@ -1,6 +1,6 @@
 <?php
 /**
- * RoughHands_Template Class
+ * RoughHands Template Class
  *
  * @package RoughHands
  * @since 1.0.0
@@ -64,6 +64,18 @@ add_action( 'init', 'roughhands_remove_storefront_before_shop_loop' );
 
 
 /**
+ * Sort products in the loop.
+ *
+ * @link http://hookr.io/plugins/woocommerce/3.0.6/functions/woocommerce_catalog_ordering/
+ * @return string The string defining the sort order
+ */
+function roughhands_woocommerce_default_catalog_orderby() {
+	return 'date';
+}
+add_filter( 'woocommerce_default_catalog_orderby', 'roughhands_woocommerce_default_catalog_orderby', 10, 1 );
+
+
+/**
  * Remove everything after the shop loop except navigation
  *
  * See `storefront/inc/woocommerce/storefront-woocommerce-template-hooks.php`
@@ -78,6 +90,29 @@ function roughhands_remove_storefront_after_shop_loop() {
 }
 add_action( 'init', 'roughhands_remove_storefront_after_shop_loop' );
 
+
+/**
+ * Change the number of products displayed per page
+ *
+ * @link https://docs.woocommerce.com/document/change-number-of-products-displayed-per-page/
+ * @param  integer $cols The number of products.
+ * @return inetger       The new number of products.
+ */
+function roughhands_loop_shop_per_page( $cols ) {
+	// $cols contains the current number of products per page based on the value stored on Options -> Reading
+	// Return the number of products you wanna show per page.
+	$cols = 6;
+	return $cols;
+}
+add_filter( 'loop_shop_per_page', 'roughhands_loop_shop_per_page', 20 );
+
+
+function roughhands_woocommerce_pagination_args( $args ) {
+	$args['prev_text'] = '';
+	$args['next_text'] = '';
+	return $args;
+}
+add_filter( 'woocommerce_pagination_args', 'roughhands_woocommerce_pagination_args', 10, 1 );
 
 
 /**
