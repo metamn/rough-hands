@@ -50,8 +50,8 @@ if ( ! class_exists( 'RoughHands' ) ) {
 		 * @return array the modified arguments
 		 */
 		public function woocommerce_support( $args ) {
-			$args['single_image_width']    = 416;
-			$args['thumbnail_image_width'] = 324;
+			$args['single_image_width']    = 400;
+			$args['thumbnail_image_width'] = 50;
 
 			return $args;
 		}

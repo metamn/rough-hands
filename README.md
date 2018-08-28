@@ -21,7 +21,7 @@ All content is dynamic - coming from the WordPress Dashboard. No content chunks 
 
 ### Products
 
-There are six original demo products, and the rest imported from the WooCommerce sample data to make pagination work.
+There are six original demo products, and the rest are imported from the WooCommerce sample data to make pagination work.
 
 ### Menu, Sidebar and Footer
 
