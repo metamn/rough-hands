@@ -107,12 +107,63 @@ function roughhands_loop_shop_per_page( $cols ) {
 add_filter( 'loop_shop_per_page', 'roughhands_loop_shop_per_page', 20 );
 
 
+/**
+ * Change the size of the product thumbnail
+ *
+ * @link http://hookr.io/plugins/woocommerce/3.0.6/files/includes-wc-template-functions/
+ * @param  string $size The original value.
+ * @return string       The new value
+ */
+function roughhands_single_product_archive_thumbnail_size( $size ) {
+	$size = 'post-thumbnail';
+	return $size;
+}
+add_filter( 'single_product_archive_thumbnail_size', 'roughhands_single_product_archive_thumbnail_size' );
+
+
+/**
+ * Display product short description.
+ *
+ * @return void
+ */
+function roughhands_woocommerce_after_shop_loop_item_title() {
+	the_excerpt();
+}
+add_action( 'woocommerce_after_shop_loop_item_title', 'roughhands_woocommerce_after_shop_loop_item_title', 10, 0 );
+
+
+
+/**
+ * Remove the pagination prev and next links
+ *
+ * @todo Also the ::after pseuda class in CSS has to be removed.
+ *
+ * @link http://hookr.io/plugins/woocommerce/3.0.6/filters/woocommerce_pagination_args/
+ * @param  array $args The pagination arguments.
+ * @return array       The modified pagination arguments
+ */
 function roughhands_woocommerce_pagination_args( $args ) {
 	$args['prev_text'] = '';
 	$args['next_text'] = '';
 	return $args;
 }
 add_filter( 'woocommerce_pagination_args', 'roughhands_woocommerce_pagination_args', 10, 1 );
+
+
+/**
+ * Add another footer widget.
+ *
+ * By default there are 4 widgets and we need 5.
+ *
+ * @param  integer $widgets The number of widgets.
+ * @return integer          The updated number of widgets.
+ */
+function roughhands_storefront_footer_widget_columns( $widgets ) {
+	$widgets = 5;
+	return $widgets;
+}
+add_action( 'storefront_footer_widget_columns', 'roughhands_storefront_footer_widget_columns', 10, 1 );
+
 
 
 /**
