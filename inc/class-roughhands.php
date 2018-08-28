@@ -21,7 +21,7 @@ if ( ! class_exists( 'RoughHands' ) ) {
 		 * @since 1.0
 		 */
 		public function __construct() {
-			// add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_child_styles' ), 99 );
+			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_child_styles' ), 99 );
 		}
 
 		/**
