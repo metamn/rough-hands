@@ -11,31 +11,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
+
 /**
- * Remove credait from header
+ * Remove product search from header
  *
+ * @link https://wordpress.stackexchange.com/questions/189062/remove-parent-theme-action-in-child#189066
  * @return void.
  */
-function roughhands_remove_storefront_credit() {
-	remove_action( 'storefront_footer', 'storefront_credit', 20 );
+function roughhands_remove_storefront_product_search() {
+	remove_action( 'storefront_header', 'storefront_product_search', 40 );
 }
-add_action( 'init', 'roughhands_remove_storefront_credit' );
+add_action( 'init', 'roughhands_remove_storefront_product_search' );
 
 
 /**
- * Remove everything after the shop loop except navigation
- *
- * See `storefront/inc/woocommerce/storefront-woocommerce-template-hooks.php`
+ * Remove cart from header
  *
  * @return void.
  */
-function roughhands_remove_storefront_after_shop_loop() {
-	remove_action( 'woocommerce_after_shop_loop', 'storefront_sorting_wrapper', 9 );
-	remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 );
-	remove_action( 'woocommerce_after_shop_loop', 'woocommerce_result_count', 20 );
-	remove_action( 'woocommerce_after_shop_loop', 'storefront_sorting_wrapper_close', 31 );
+function roughhands_remove_storefront_header_cart() {
+	remove_action( 'storefront_header', 'storefront_header_cart', 60 );
 }
-add_action( 'init', 'roughhands_remove_storefront_after_shop_loop' );
+add_action( 'init', 'roughhands_remove_storefront_header_cart' );
+
+
+/**
+ * Remove breadcrumb
+ *
+ * @return void.
+ */
+function roughhands_remove_woocommerce_breadcrumb() {
+	remove_action( 'storefront_before_content', 'woocommerce_breadcrumb', 10 );
+}
+add_action( 'init', 'roughhands_remove_woocommerce_breadcrumb' );
 
 
 /**
@@ -54,24 +62,30 @@ function roughhands_remove_storefront_before_shop_loop() {
 }
 add_action( 'init', 'roughhands_remove_storefront_before_shop_loop' );
 
+
 /**
- * Remove cart from header
+ * Remove everything after the shop loop except navigation
+ *
+ * See `storefront/inc/woocommerce/storefront-woocommerce-template-hooks.php`
  *
  * @return void.
  */
-function roughhands_remove_storefront_header_cart() {
-	remove_action( 'storefront_header', 'storefront_header_cart', 60 );
+function roughhands_remove_storefront_after_shop_loop() {
+	remove_action( 'woocommerce_after_shop_loop', 'storefront_sorting_wrapper', 9 );
+	remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 );
+	remove_action( 'woocommerce_after_shop_loop', 'woocommerce_result_count', 20 );
+	remove_action( 'woocommerce_after_shop_loop', 'storefront_sorting_wrapper_close', 31 );
 }
-add_action( 'init', 'roughhands_remove_storefront_header_cart' );
+add_action( 'init', 'roughhands_remove_storefront_after_shop_loop' );
+
 
 
 /**
- * Remove product search from header
+ * Remove credit from footer
  *
- * @link https://wordpress.stackexchange.com/questions/189062/remove-parent-theme-action-in-child#189066
  * @return void.
  */
-function roughhands_remove_storefront_product_search() {
-	remove_action( 'storefront_header', 'storefront_product_search', 40 );
+function roughhands_remove_storefront_credit() {
+	remove_action( 'storefront_footer', 'storefront_credit', 20 );
 }
-add_action( 'init', 'roughhands_remove_storefront_product_search' );
+add_action( 'init', 'roughhands_remove_storefront_credit' );
