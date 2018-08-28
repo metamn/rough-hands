@@ -2,6 +2,7 @@
 /**
  * RoughHands Template Class
  *
+ * @todo Move the code below insisde a class.
  * @package RoughHands
  * @since 1.0.0
  */

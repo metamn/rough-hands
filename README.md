@@ -31,7 +31,7 @@ They are all using content set up in the Dashboard and customized via the Appear
 
 The `Add to cart` button text was changed to `Reserve` with a plugin, following these instructions: https://docs.woocommerce.com/document/change-add-to-cart-button-text/
 
-### Template parts
+## Template parts
 
 Some template parts coming from the parent theme were removed, some new parts were added, and a few configuration parameters were changed.
 
