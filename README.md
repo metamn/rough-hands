@@ -26,3 +26,13 @@ There are six original demo products, and the rest are imported from the WooComm
 ### Menu, Sidebar and Footer
 
 They are all using content set up in the Dashboard and customized via the Appearance menu.
+
+### Add to cart
+
+The `Add to cart` button text was changed to `Reserve` with a plugin, following these instructions: https://docs.woocommerce.com/document/change-add-to-cart-button-text/
+
+### Template parts
+
+Some template parts coming from the parent theme were removed, some new parts were added, and a few configuration parameters were changed.
+
+All these can be found at `inc/class-roughhands-template.php`.
