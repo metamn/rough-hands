@@ -1,0 +1,7 @@
+@mixin footer-credits {
+	@include margin(half, no, no, no);
+
+	.link {
+		@include link;
+	}
+}

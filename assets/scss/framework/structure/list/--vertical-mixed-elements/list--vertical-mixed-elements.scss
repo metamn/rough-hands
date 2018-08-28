@@ -1,0 +1,11 @@
+@mixin list--vertical-mixed-elements($margin-top: yes) {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	> * {
+		+ * {
+			@include margin($margin-top, no, no, no);
+		}
+	}
+}

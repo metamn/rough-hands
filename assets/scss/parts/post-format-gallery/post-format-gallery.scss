@@ -1,0 +1,19 @@
+@mixin post-format-gallery {
+	.post-content-between-sidebars {
+		@include mobile-and-up {
+			@include post-content-between-sidebars--display-vertical;
+		}
+
+		.post-gallery {
+			@include padding;
+
+			.gallery {
+				@include post-content-gallery;
+
+				figure {
+					@include figure--without-figcaption;
+				}
+			}
+		}
+	}
+}

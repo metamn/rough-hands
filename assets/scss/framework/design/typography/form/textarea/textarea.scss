@@ -1,0 +1,6 @@
+@mixin textarea {
+	@include border(normal, all);
+
+	padding: $lem;
+	width: 100%;
+}

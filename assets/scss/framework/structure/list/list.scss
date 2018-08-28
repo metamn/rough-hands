@@ -1,0 +1,39 @@
+@mixin list($title: '.list-title', $items: '.list-items', $item: '.list-item', $show-title: true, $show-navigation: false, $direction: vertical, $centered-vertically: true) {
+	width: 100%;
+
+	#{$title} {
+		@if ($show-title == false) {
+			display: none;
+		} @else {
+			+ #{$items} {
+				@include margin(yes, no, no, no);
+			}
+		}
+	}
+
+	#{$items} {
+		width: 100%;
+		
+		@if ($direction == vertical) {
+			@if ($item == mixed) {
+				@include list--vertical-mixed-elements;
+			} @else {
+				@include list--vertical($item);
+			}
+
+			@if ($centered-vertically == true) {
+				align-items: center;
+			}
+		} @else {
+			@if ($direction == horizontal) {
+				@include list--horizontal($item);
+			}
+		}
+
+		.navigation {
+			@if ($show-navigation == false) {
+				display: none;
+			}
+		}
+	}
+}

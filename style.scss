@@ -1,0 +1,20 @@
+/*!
+Theme Name:     Rough Hands
+Theme URI:      https://github.com/morethemesbaby/rough-hands
+Description:    A WooCommerce / Storefront child theme
+Author:         More Themes Baby
+Author URI:     https://morethemes.baby
+Template:       storefront
+Version:        1.0.0
+License:        GNU General Public License v2 or later
+License URI:    http://www.gnu.org/licenses/gpl-2.0.html
+Tags:           e-commerce
+Text Domain:    rough-hands
+*/
+
+@import 'assets/scss/themes/white.scss';
+@import 'assets/scss/framework/behaviour/**/*.scss';
+@import 'assets/scss/framework/design/**/*.scss';
+@import 'assets/scss/framework/structure/**/*.scss';
+@import 'assets/scss/parts/**/*.scss';
+@import 'assets/scss/pages/**/*.scss';

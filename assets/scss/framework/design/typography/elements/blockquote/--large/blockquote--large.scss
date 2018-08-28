@@ -1,0 +1,5 @@
+@mixin blockquote--large {
+	blockquote {
+		@include text-style(large);
+	}
+}

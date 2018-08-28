@@ -1,0 +1,58 @@
+@mixin post-format-comment {
+	border: 0;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.comment-content,
+	.comment-excerpt {
+		@include padding(yes, yes, yes, yes);
+		@include border(normal, all);
+
+		width: 100%;
+
+		.text {
+			@include text-style(body-text-post);
+		}
+
+		.comment-read-more {
+			@include margin(yes, no, no, no);
+
+			.comment-read-more-link {
+				display: flex;
+				flex-wrap: wrap;
+
+				.arrow-with-triangle {
+					@include arrow-with-triangle;
+					@include margin(no, no, no, half);
+				}
+			}
+		}
+	}
+
+	.comment-date-and-time,
+	.comment-post-title-with-arrows {
+		@include text-style(small);
+	}
+
+	.comment-post-title-with-arrows {
+		align-items: flex-end;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+
+		.arrow-with-triangle {
+			@include arrow-with-triangle;
+			@include margin(yes, no, no, no);
+
+			position: relative;
+		}
+
+		.comment-title {
+			@include padding(no, no, yes, no);
+		}
+	}
+
+	@if ($post-format-comment-background-color and $post-format-comment-text-color) {
+		@include set-colors($post-format-comment-background-color, $post-format-comment-text-color);
+	}
+}

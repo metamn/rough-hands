@@ -1,0 +1,6 @@
+@mixin input-text {
+	@include border(normal, bottom);
+  
+	padding-bottom: $lem / 2;
+	width: 100%;
+}

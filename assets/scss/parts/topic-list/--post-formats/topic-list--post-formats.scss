@@ -1,0 +1,19 @@
+@mixin topic-list--post-formats {
+	.list-title {
+		display: none;
+	}
+
+	.list-items {
+		align-items: baseline;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.list-item {
+			@include list-item;
+			@include list--horizontal-mixed-items(half, no);
+			@include topic;
+			@include margin(no, no, half, no);
+		}
+	}
+}

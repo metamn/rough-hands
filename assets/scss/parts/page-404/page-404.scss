@@ -1,0 +1,17 @@
+@mixin page-404 {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+
+	> * {
+		width: 100%;
+	}
+
+	.post {
+		@include margin(no, no, yes, no);
+
+		.search {
+			@include margin(yes, no, no, no);
+		}
+	}
+}

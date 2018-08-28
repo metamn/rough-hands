@@ -1,0 +1,27 @@
+@mixin post-footer {
+	@include margin(yes, no, half, no);
+	width: 100%;
+
+	.list {
+		align-items: baseline;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.topic,
+		.posted-on,
+		.posted-by,
+		.edit-link {
+			@include topic;
+			@include margin(no, no, half, no);
+		}
+	}
+
+	.edit-link {
+		display: block;
+	}
+
+	+.navigation-for-post {
+		@include margin(no, no, no, no);
+	}
+}

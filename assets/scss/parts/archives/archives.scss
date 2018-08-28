@@ -1,0 +1,17 @@
+@mixin archives {
+	@include list--vertical-mixed-elements;
+	@include list('.archives-title', '.archives-items', mixed);
+
+	align-items: center;
+
+	.archives-title {
+		@include width;
+	}
+
+	.archives-items {
+		@include background-pattern($sidebar-pattern, $sidebar-pattern-color);
+		@include padding(yes, no, yes, no);
+
+		@include widget-list;
+	}
+}

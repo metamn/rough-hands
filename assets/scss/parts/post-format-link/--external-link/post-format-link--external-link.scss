@@ -1,0 +1,13 @@
+@mixin post-format-link--external-link {
+	.post-content-between-sidebars {
+		.post-title {
+			.arrow-with-triangle {
+				transform: rotate(-15deg);
+			}
+		}
+
+		.post-permalink {
+			align-self: center;
+		}
+	}
+}

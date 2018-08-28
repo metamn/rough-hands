@@ -1,0 +1,28 @@
+@mixin navigation {
+	@include border(normal, top);
+	@include border(normal, bottom);
+	@include margin(yes, no, no, no);
+	@include padding(half, no, half, no);
+
+	width: 100%;
+
+	.arrow-with-triangle {
+		@include arrow-with-triangle;
+		margin-right: $lem / 2;
+	}
+
+	a,
+	.link {
+		@include link;
+	}
+
+	// Inside a post
+	&.navigation-for-post {
+		@include navigation-for-post;
+	}
+
+	// In the loop
+	&.posts-navigation {
+		@include navigation-for-posts;
+	}
+}

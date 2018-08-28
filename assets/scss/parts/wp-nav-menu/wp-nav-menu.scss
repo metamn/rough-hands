@@ -1,0 +1,25 @@
+@mixin wp-nav-menu {
+	@include ul;
+	@include list--vertical('li', half);
+	@include ul-nested;
+	@include ul--underlined;
+
+	li {
+		a {
+			@include link($type: not-underlined);
+		}
+
+		&.page_item_has_children {
+			border-bottom: n0;
+			padding-bottom: 0;
+
+			a {
+				+ ul {
+					@include border(normal, top);
+					margin-top: $lem / 2;
+					padding-top: $lem / 2;
+				}
+			}
+		}
+	}
+}

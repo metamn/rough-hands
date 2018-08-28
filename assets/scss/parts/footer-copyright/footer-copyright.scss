@@ -1,0 +1,7 @@
+@mixin footer-copyright {
+	@include margin(half, no, no, no);
+	
+	.link {
+		@include link;
+	}
+}

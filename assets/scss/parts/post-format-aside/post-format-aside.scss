@@ -1,0 +1,21 @@
+@mixin post-format-aside {
+	.post-content-between-sidebars {
+		display: flex;
+		flex-direction: column;
+
+		.post-content {
+			.text {
+				@include colors(inverted);
+				@include padding;
+
+				@include mobile-and-up {
+					@include text-style(large);
+				}
+			}
+		}
+
+		.post-permalink {
+			align-self: center;
+		}
+	}
+}

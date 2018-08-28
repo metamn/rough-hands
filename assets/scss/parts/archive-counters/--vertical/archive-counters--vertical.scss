@@ -1,0 +1,22 @@
+@mixin archive-counters--vertical {
+	@include flexbox-grid(2, 0px, 0px);
+
+	.archive-counter {
+		width: 50%;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: first baseline;
+
+		&:nth-of-type(1),
+		&:nth-of-type(2) {
+			@include border(normal, bottom);
+			margin-bottom: $lem;
+			padding-bottom: $lem;
+		}
+
+		.list-item-primary-text {
+			@include word-wrap;
+			display: inline;
+		}
+	}
+}

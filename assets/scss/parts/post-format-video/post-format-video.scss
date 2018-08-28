@@ -1,0 +1,14 @@
+@mixin post-format-video {
+	.post-content-between-sidebars {
+		.post-content {
+			.text {
+				iframe {
+					// otherwise is ugly ....
+					@include mobile {
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+}

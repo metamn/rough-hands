@@ -1,0 +1,28 @@
+// Settings for the content section on the single post page
+//
+@mixin single {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	.post-single {
+		@include post-single;
+	}
+
+	.post-footer {
+		@include post-footer;
+	}
+
+	.post-footer-summary {
+		@include post-footer-summary;
+	}
+
+	.comment-list {
+		@include comment-list;
+	}
+
+	.post-list--for-a-summary {
+		@include post-list--for-a-summary;
+	}
+}

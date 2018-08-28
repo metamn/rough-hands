@@ -1,0 +1,3 @@
+@mixin post-list--with-comments {
+	@include list('.list-title', '.list-items', '.post', $show-title: false, $show-navigation: true);
+}

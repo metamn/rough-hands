@@ -1,0 +1,10 @@
+@mixin post-paginated-content {
+	.text {
+		display: flex;
+		flex-wrap: wrap;
+
+		.page-links-title {
+			margin-right: $lem / 2;
+		}
+	}
+}

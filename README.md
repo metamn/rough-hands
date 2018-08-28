@@ -49,4 +49,26 @@ What one can do is to overwrite manually the parent theme CSS styles which leads
 
 On responsive design Storefront doesn't makes a difference between how the site looks on tablet / portrait mode (https://imgur.com/a/zW1ylHt) and laptop / landscape mode (https://imgur.com/a/Rx3X6Hn), and, it adds lots of code we don't need on mobile screens (https://imgur.com/a/Pxhu6o8).
 
-As a solution we are rebuilding the site's style with scratch using the same technologies (SASS) as the parent theme.
+As a solution we are rebuilding the site's style from scratch using the same technologies (Underscore starter theme, SASS/SCSS code) as the parent theme.
+
+### Node, Gulp, BEM
+
+We use standard front-end tools to build and generate the theme style. Please check this link for the technologies used and their usage adoption: https://morethemes.baby/2018/05/12/more-themes-baby-is-in-the-loop/
+
+These technologies are adding the following files and folders to the theme:
+
+```
+/assets/
+/node_modules/
+.stylelintrc
+gulpfile.js
+package.json
+style.scss
+style.scss.map
+```
+
+And there is a command to compile the SCSS files into CSS:
+
+```
+gulp
+```

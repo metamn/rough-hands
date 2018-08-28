@@ -1,0 +1,19 @@
+@mixin breadcrumb {
+	.ul {
+		@include ul;
+		@include list--horizontal('.li', half, half);
+
+		.li {
+			align-self: center;
+			
+			.link {
+				@include link;
+			}
+
+			.triangle {
+				@include triangle($size: $lem / 4);
+				display: block;
+			}
+		}
+	}
+}

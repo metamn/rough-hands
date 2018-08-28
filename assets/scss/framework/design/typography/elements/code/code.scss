@@ -1,0 +1,8 @@
+@mixin code {
+	.code,
+	code {
+		@include font(monospace);
+		display: block;
+		word-wrap: normal;
+	}
+}

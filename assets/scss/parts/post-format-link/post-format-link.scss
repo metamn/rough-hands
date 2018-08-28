@@ -1,0 +1,30 @@
+@mixin post-format-link {
+	.post-content-between-sidebars {
+		@include mobile-and-up {
+			@include post-content-between-sidebars--display-vertical;
+		}
+
+		@if ($post-format-link-background-color and $post-format-link-text-color) {
+			@include set-colors($post-format-link-background-color, $post-format-link-text-color);
+		}
+
+		.post-title {
+			width: 100%;
+
+			.link {
+				align-items: center;
+				display: flex;
+				justify-content: space-between;
+
+				.arrow-with-triangle {
+					@include arrow-with-triangle;
+					margin-left: $lem / 2;
+				}
+			}
+		}
+	}
+
+	&.external-link {
+		@include post-format-link--external-link;
+	}
+}

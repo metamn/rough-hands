@@ -1,0 +1,13 @@
+@mixin navigation-for-post {
+	.ul {
+		.li {
+			align-items: center;
+			display: flex;
+			flex-wrap: nowrap;
+
+			+ .li {
+				margin-top: $lem / 2;
+			}
+		}
+	}
+}

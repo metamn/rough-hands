@@ -1,0 +1,16 @@
+@mixin archive-counters {
+	@include padding(half, no, no, half);
+	@include border(normal, top);
+
+	.archive-counter {
+		@include archive-counter;
+	}
+
+	@include mobile {
+		@include archive-counters--vertical;
+	}
+
+	@include mobile-and-up {
+		@include archive-counters--horizontal;
+	}
+}

@@ -176,3 +176,14 @@ function roughhands_remove_storefront_credit() {
 	remove_action( 'storefront_footer', 'storefront_credit', 20 );
 }
 add_action( 'init', 'roughhands_remove_storefront_credit' );
+
+
+/**
+ * Remove footer bar on mobile screens
+ *
+ * @return void
+ */
+function roughhands_storefront_handheld_footer_bar() {
+	remove_action( 'storefront_footer', 'storefront_handheld_footer_bar', 999 );
+}
+add_action( 'init', 'roughhands_storefront_handheld_footer_bar' );

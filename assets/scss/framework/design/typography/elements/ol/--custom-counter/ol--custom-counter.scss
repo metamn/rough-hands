@@ -1,0 +1,24 @@
+// - https://css-tricks.com/numbering-in-style/
+@mixin ol--custom-counter {
+	ol,
+	.ol {
+		counter-reset: li;
+
+		> li,
+		> .li {
+			@include margin(no, no, half, no);
+			display: block;
+			list-style: none;
+
+			> * {
+				display: inline-block;
+			}
+
+			&::before {
+				@include margin(no, yes, no, no);
+				content: counter(li);
+				counter-increment: li;
+			}
+		}
+	}
+}

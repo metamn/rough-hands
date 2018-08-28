@@ -1,0 +1,19 @@
+@mixin archive-header {
+	@include border(normal, all);
+	width: 100%;
+
+	.breadcrumb {
+		@include breadcrumb;
+		@include padding(half, half, no, half);
+		@include border(normal, bottom);
+		@include text-style(small);
+	}
+
+	.archive-title-and-description {
+		@include archive-title-and-description;
+	}
+
+	.archive-counter-list {
+		@include archive-counters;
+	}
+}

@@ -1,0 +1,11 @@
+@mixin list--vertical($item, $margin-top: yes) {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	#{$item} {
+		+ #{$item} {
+			@include margin($margin-top, no, no, no);
+		}
+	}
+}

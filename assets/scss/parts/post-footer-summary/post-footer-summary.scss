@@ -1,0 +1,38 @@
+@mixin post-footer-summary {
+	@include margin(yes, no, half, no);
+	width: 100%;
+
+	.list {
+		align-items: last baseline;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.link-with-prefix .link,
+		.topic-with-prefix .topic,
+		.posted-on,
+		.posted-by {
+			@include topic;
+		}
+
+		.link-with-prefix,
+		.topic-with-prefix,
+		.post-date-with-prefix,
+		.post-author {
+			@include margin(no, half, half, no);
+		}
+
+		.link-with-prefix .link {
+			@include link($type: not-underlined);
+		}
+
+		.post-date-with-prefix {
+			display: flex;
+			align-items: center;
+
+			.date-prefix {
+				@include word-wrap;
+			}
+		}
+	}
+}

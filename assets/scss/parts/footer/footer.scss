@@ -1,0 +1,15 @@
+@mixin footer {
+	@include padding(yes, no, yes, no);
+
+	.footer-copyright {
+		@include footer-copyright;
+	}
+
+	.footer-navigation {
+		@include footer-navigation;
+	}
+
+	.footer-credits {
+		@include footer-credits;
+	}
+}

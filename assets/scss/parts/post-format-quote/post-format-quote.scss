@@ -1,0 +1,42 @@
+@mixin post-format-quote {
+	.post-content-between-sidebars {
+		@include mobile-and-up {
+			@include post-content-between-sidebars--display-vertical;
+		}
+
+		> * {
+			order: 2;
+		}
+
+		.post-content {
+			@include background-pattern($quote-pattern, $quote-pattern-color);
+			padding: 0 !important;
+			order: 1;
+
+			@include mobile-and-up {
+				@include blockquote--large;
+			}
+
+			.text {
+				@include colors(default);
+				@include border(thin, all);
+				@include padding;
+				@include margin;
+				transform: translateX(-$left) skew(5deg);
+
+				@include landscape {
+					padding: $top * 1.5 $left * 1.5;
+				}
+
+				blockquote,
+				q {
+					@include blockquote--naked;
+				}
+			}
+		}
+
+		.post-permalink {
+			align-self: center;
+		}
+	}
+}

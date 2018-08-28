@@ -1,0 +1,16 @@
+@mixin post-format-image {
+	.post-content-between-sidebars {
+		@include mobile-and-up {
+			@include post-content-between-sidebars--display-vertical;
+		}
+
+		.post-first-image {
+			figure {
+				@include figure;
+				@include figure--without-figcaption;
+				@include border(normal, top);
+				@include figure--with-background($figure-background-pattern, $figure-background-pattern-color);
+			}
+		}
+	}
+}

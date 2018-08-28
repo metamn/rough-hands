@@ -1,0 +1,11 @@
+@mixin archive-list--by-date($padding: half) {
+	@include list($show-title: false);
+
+	.list-items {
+		@include list--vertical('.archive-year-and-months');
+
+		.archive-year-and-months {
+			@include archive-year-and-months($padding);
+		}
+	}
+}

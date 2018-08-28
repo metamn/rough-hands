@@ -1,0 +1,13 @@
+@mixin page {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+
+	> * {
+		width: 100%;
+	}
+
+	.post {
+		@include margin(no, no, yes, no);
+	}
+}

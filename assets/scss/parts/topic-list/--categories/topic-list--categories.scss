@@ -1,0 +1,7 @@
+@mixin topic-list--categories {
+	@include list($item: '.topic', $direction: horizontal);
+
+	.topic {
+		@include topic;
+	}
+}

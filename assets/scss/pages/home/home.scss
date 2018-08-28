@@ -1,0 +1,18 @@
+// Settings for the homepage
+html {
+	body {
+		&.home {
+			.header {
+				.header-image {
+					@include header-image--full-sized;
+				}
+			}
+
+			.footer {
+				.footer-navigation {
+					@include footer-navigation--hide-current-item;
+				}
+			}
+		}
+	}
+}

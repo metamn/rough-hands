@@ -1,0 +1,11 @@
+@mixin widget {
+	@include colors(default);
+	@include border(normal, all);
+	@include padding;
+	@include width;
+
+	a,
+	.link {
+		@include link;
+	}
+}

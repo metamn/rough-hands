@@ -1,0 +1,46 @@
+@mixin content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	a,
+	.link {
+		@include link;
+	}
+
+	.post {
+		@include post;
+	}
+
+	.navigation {
+		@include navigation;
+	}
+
+	.home {
+		@include home;
+	}
+
+	.single {
+		@include single;
+	}
+
+	.archive {
+		@include archive;
+	}
+
+	.archives {
+		@include archives;
+	}
+
+	.search {
+		@include search;
+	}
+
+	.page-404 {
+		@include page-404;
+	}
+
+	.page {
+		@include page;
+	}
+}

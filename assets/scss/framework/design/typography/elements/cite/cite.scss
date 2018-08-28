@@ -1,0 +1,15 @@
+@mixin cite {
+	cite,
+	.cite {
+		@include font(default);
+		@include border(normal, top);
+		@include margin(yes, no, no, no);
+		@include padding(yes, no, no, no);
+		display: block;
+
+		&::before {
+			content: 'by';
+			padding-right: $lem / 4;
+		}
+	}
+}
