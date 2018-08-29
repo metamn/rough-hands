@@ -1,0 +1,59 @@
+// Chaparral Pro
+//
+// From Codeable
+//
+
+$font-family-chapparral-pro: (
+	regular: ('ChaparralPro-Regular'),
+	italic: ('ChaparralPro-Italic'),
+	bold: ('ChaparralPro-Bold'),
+	bold-italic: ('ChaparralPro-BoldIt'),
+	light-italic: ('ChaparralPro-LightIt')
+);
+
+@mixin fonts--chaparral-pro {
+	@font-face {
+		font-family: 'ChaparralPro-Regular';
+		font-style: normal;
+		font-weight: normal;
+		src: url('assets/fonts/ChaparralPro-Regular.woff2') format('woff2'),
+			url('assets/fonts/ChaparralPro-Regular.woff') format('woff'),
+			url('assets/fonts/ChaparralPro-Regular.ttf') format('truetype');
+	}
+
+	@font-face {
+		font-family: 'ChaparralPro-Italic';
+		font-style: normal;
+		font-weight: normal;
+		src: url('assets/fonts/ChaparralPro-Italic.woff2') format('woff2'),
+			url('assets/fonts/ChaparralPro-Italic.woff') format('woff'),
+			url('assets/fonts/ChaparralPro-Italic.ttf') format('truetype');
+	}
+
+	@font-face {
+		font-family: 'ChaparralPro-Bold';
+		font-style: normal;
+		font-weight: normal;
+		src: url('assets/fonts/ChaparralPro-Bold.woff2') format('woff2'),
+			url('assets/fonts/ChaparralPro-Bold.woff') format('woff'),
+			url('assets/fonts/ChaparralPro-Bold.ttf') format('truetype');
+	}
+
+	@font-face {
+		font-family: 'ChaparralPro-BoldIt';
+		font-style: normal;
+		font-weight: normal;
+		src: url('assets/fonts/ChaparralPro-BoldIt.woff2') format('woff2'),
+			url('assets/fonts/ChaparralPro-BoldIt.woff') format('woff'),
+			url('assets/fonts/ChaparralPro-BoldIt.ttf') format('truetype');
+	}
+
+	@font-face {
+		font-family: 'ChaparralPro-LightIt';
+		font-style: normal;
+		font-weight: normal;
+		src: url('assets/fonts/ChaparralPro-LightIt.woff2') format('woff2'),
+			url('assets/fonts/ChaparralPro-LightIt.woff') format('woff'),
+			url('assets/fonts/ChaparralPro-LightIt.ttf') format('truetype');
+	}
+}

@@ -72,3 +72,5 @@ And there is a command to compile the SCSS files into CSS:
 ```
 gulp
 ```
+
+The documentation for installing and using these technologies is out of scope of this current document. On request a tutorial can be put together.

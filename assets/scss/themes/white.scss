@@ -16,23 +16,8 @@
 
 // Default colors
 //
-$background-color: white;
-$text-color: black;
-
-// Post format colors
-//
-$post-format-status-background-color: '';
-$post-format-status-text-color: '';
-
-$post-format-comment-background-color: '';
-$post-format-comment-text-color: '';
-
-$post-format-link-background-color: '';
-$post-format-link-text-color: '';
-
-$post-format-standard-background-color: '';
-$post-format-standard-text-color: '';
-
+$background-color: 'white';
+$text-color: 'black';
 
 
 /**
@@ -41,15 +26,15 @@ $post-format-standard-text-color: '';
 
 // For text
 //
-$body-font: 'nimbus-sans';
+$body-font: 'chaparral-pro';
 
 // For code inside text
 //
-$monospace-font:'nimbus-mono';
+$monospace-font: 'chaparral-pro';
 
 // For site title (only used there)
 //
-$title-font: 'nimbus-mono';
+$title-font: 'chaparral-pro';
 
 
 
@@ -98,43 +83,11 @@ $left: $lem * 2;
 $top-mobile: $lem * 2;
 $left-mobile: $lem;
 
-// The width of a post
-//
-$text-block-width: $lem * 30;
-$post-width: $text-block-width;
-
-
-// Display homepage posts
-// - `false` - in a single column
-// - `true` - in multiple columns
-$home-grid-columns: 'false';
-
-
 
 /**
  * Decorations
  *
  */
-
-// Cursors
-// - cursors can be found in the `assets/images` folder
-$cursor-default: 'brutalist_line_SVGicon_cursor1-64x64--white';
-$cursor-pointer: 'brutalist_line_SVGicon_cursor2-64x64--white';
-
-// Cursor position needs to be fine tuned
-// - when the default cursor is switched into a pointer it usually flicks
-// - or the default cursor is not switched into a pointer at the right position
-// - the top of the cursor needs to be adjusted with the following settings
-// - `x` - move top of the cursor left
-// - `y` - move top of the cursor up
-// - `x, y` are two unitless nonnegative numbers less than 32
-// - `x, y` needs to be adjusted both for the default and pointer cursors by trial and error
-// - see https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
-$cursor-default-x: 32;
-$cursor-default-y: 0;
-$cursor-pointer-x: 20;
-$cursor-pointer-y: 0;
-
 
 // Border size
 // - borders are the main design element of the theme
@@ -142,26 +95,3 @@ $cursor-pointer-y: 0;
 $border-normal: 1px solid;
 $border-thin: $lem / 16 solid;
 $border-thick: $lem / 8 solid;
-
-// Background patterns
-// - there is the `background-pattern()` mixin which defines background images
-// - patterns are created with http://patternify.com/
-// - by adding a suffix you can change the pattern
-// - for example: `dotted-black` will use the `background-pattern--dotted-black` mixin
-//
-
-// The background pattern / color of an image (`<figure>`)
-//
-$figure-background-pattern: '';
-$figure-background-pattern-color: '';
-
-// The background pattern / color of a blockquote
-//
-$quote-pattern: 'dotted';
-$quote-pattern-color: 'white';
-
-
-// The background pattern / color of the sidebar
-//
-$sidebar-pattern: 'horizontal-lines';
-$sidebar-pattern-color: 'white';

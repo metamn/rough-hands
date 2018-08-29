@@ -2,7 +2,7 @@
 // - includes @font-face definitions
 // - includes the font mixin
 //
-// Generated with https://www.fontsquirrel.com/tools/webfont-generator
+// Generated with https://transfonter.org/
 //
 // If fonts are served locally add them to the `assets/fonts` folder
 // And include them as: `src: url('assets/fonts/nimbussanl-bolita-webfont.woff2') format('woff2'),`
@@ -11,16 +11,7 @@
 // Load fonts
 //
 
-// This is always required for sparklines
-@include fonts--sparks;
-
-@if ($body-font == 'nimbus-sans' or $monospace-font == 'nimbus-sans' or $title-font == 'nimbus-sans') {
-	@include fonts--nimbus-sans;
-}
-
-@if ($body-font == 'nimbus-mono' or $monospace-font == 'nimbus-mono' or $title-font == 'nimbus-mono') {
-	@include fonts--nimbus-mono;
-}
+@include fonts--chaparral-pro;
 
 
 // The font mixins
@@ -29,14 +20,14 @@
 
 	// Get the fonts
 	//
-	$body-font-map: $font-family-nimbus-sans;
-	$monospace-font-map: $font-family-nimbus-mono;
-	$title-font-map: $font-family-nimbus-mono;
+	$body-font-map: $font-family-chapparral-pro;
+	$monospace-font-map: $font-family-chapparral-pro;
+	$title-font-map: $font-family-chapparral-pro;
 	font-style: normal;
 	font-weight: normal;
 
 	// Set up fonts
-	// 
+	//
 	@if ($variant == 'default') {
 		font-family: #{map-get($body-font-map, 'regular')};
 	}

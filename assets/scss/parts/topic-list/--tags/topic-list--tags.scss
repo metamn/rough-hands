@@ -1,7 +1,0 @@
-@mixin topic-list--tags {
-	@include list($item: '.topic', $direction: horizontal);
-
-	.topic {
-		@include topic;
-	}
-}

@@ -4,5 +4,5 @@
 //
 @mixin button {
 	@include text-style(action);
-	@include cursor(pointer);
+	cursor: pointer;
 }
