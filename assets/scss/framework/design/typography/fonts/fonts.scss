@@ -12,6 +12,7 @@
 //
 
 @include fonts--chaparral-pro;
+@include fonts--alternate-gothic-no2bt;
 
 
 // The font mixins
@@ -21,8 +22,7 @@
 	// Get the fonts
 	//
 	$body-font-map: $font-family-chapparral-pro;
-	$monospace-font-map: $font-family-chapparral-pro;
-	$title-font-map: $font-family-chapparral-pro;
+	$title-font-map: $font-family-alternate-gothic-no2bt;
 	font-style: normal;
 	font-weight: normal;
 
@@ -44,11 +44,11 @@
 		font-family: #{map-get($body-font-map, 'bold-italic')};
 	}
 
-	@if ($variant == 'monospace') {
-		font-family: #{map-get($monospace-font-map, 'regular')};
+	@if ($variant == 'light-italic') {
+		font-family: #{map-get($body-font-map, 'light-italic')};
 	}
 
-	@if ($variant == 'site-title') {
+	@if ($variant == 'product-title') {
 		font-family: #{map-get($title-font-map, 'regular')};
 	}
 }

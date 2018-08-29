@@ -69,6 +69,12 @@ Text Domain:    rough-hands
   font-weight: normal;
   src: url("assets/fonts/ChaparralPro-LightIt.woff2") format("woff2"), url("assets/fonts/ChaparralPro-LightIt.woff") format("woff"), url("assets/fonts/ChaparralPro-LightIt.ttf") format("truetype"); }
 
+@font-face {
+  font-family: 'AlternateGothicNo2BT-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/AlternateGothicNo2BT-Regular.woff2") format("woff2"), url("assets/fonts/AlternateGothicNo2BT-Regular.woff") format("woff"), url("assets/fonts/AlternateGothicNo2BT-Regular.ttf") format("truetype"); }
+
 /* - fixing big child elements breaking smaller parent's width and height in Firefox
 - http://stackoverflow.com/questions/26895349/how-can-i-get-ff-33-x-flexbox-behavior-in-ff-34-x
 */

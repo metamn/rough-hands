@@ -1,0 +1,19 @@
+// Alternate Gothic No2 BT
+//
+// From Codeable
+//
+
+$font-family-alternate-gothic-no2bt: (
+	regular: ('AlternateGothicNo2BT-Regular')
+);
+
+@mixin fonts--alternate-gothic-no2bt {
+	@font-face {
+		font-family: 'AlternateGothicNo2BT-Regular';
+		font-style: normal;
+		font-weight: normal;
+		src: url('assets/fonts/AlternateGothicNo2BT-Regular.woff2') format('woff2'),
+			url('assets/fonts/AlternateGothicNo2BT-Regular.woff') format('woff'),
+			url('assets/fonts/AlternateGothicNo2BT-Regular.ttf') format('truetype');
+	}
+}
