@@ -1,5 +1,11 @@
 @mixin products {
+	@include ul;
+	
 	.product {
 		@include product;
+	}
+
+	@include laptop-and-up {
+		@include products--three-in-a-row;
 	}
 }

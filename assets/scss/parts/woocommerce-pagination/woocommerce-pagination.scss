@@ -1,3 +1,6 @@
 @mixin woocommerce-pagination {
-
+	.page-numbers {
+		@include ul;
+		@include ul--horizontal;
+	}
 }

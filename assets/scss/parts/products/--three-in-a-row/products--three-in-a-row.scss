@@ -1,0 +1,3 @@
+@mixin products--three-in-a-row {
+	@include flexbox-grid(3, $lem, $lem, $grid-title: false, $iepx: 0px);
+}
