@@ -1,0 +1,15 @@
+@mixin site-content-grid--product-categories-first {
+	display: flex;
+
+	.woocommerce {
+		order: 1;
+	}
+
+	.widget-area {
+		order: 2;
+	}
+
+	.content-area {
+		order: 3;
+	}
+}

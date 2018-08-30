@@ -1,0 +1,12 @@
+@mixin site-content-grid {
+	display: flex;
+	flex-direction: column;
+
+	@include mobile-and-up {
+		@include site-content-grid--product-categories-first;
+	}
+
+	@include laptop-and-up {
+		@include site-content-grid--display-horizontal;
+	}
+}

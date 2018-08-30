@@ -18,6 +18,10 @@ html {
 			@include site-header;
 		}
 
+		.site-content {
+			@include site-content;
+		}
+
 		// Common classes
 		.hidden {
 			display: none;

@@ -1,0 +1,5 @@
+@mixin woocommerce-products-header {
+	@include mobile-and-up {
+		display: none;
+	}
+}

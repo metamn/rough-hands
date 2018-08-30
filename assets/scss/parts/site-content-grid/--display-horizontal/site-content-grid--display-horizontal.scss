@@ -1,0 +1,5 @@
+@mixin site-content-grid--display-horizontal {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+}

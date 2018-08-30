@@ -1,0 +1,15 @@
+@mixin content-area {
+	.site-main {
+		.woocommerce-products-header {
+			@include woocommerce-products-header;
+		}
+
+		.products {
+			@include products;
+		}
+
+		.woocommerce-pagination {
+			@include woocommerce-pagination;
+		}
+	}
+}

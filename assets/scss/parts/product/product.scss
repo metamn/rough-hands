@@ -1,0 +1,5 @@
+@mixin product {
+	.wp-post-image {
+		@include image--stretch;
+	}
+}

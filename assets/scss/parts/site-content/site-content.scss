@@ -1,0 +1,13 @@
+@mixin site-content {
+	.col-full {
+		@include site-content-grid;
+		
+		.content-area {
+			@include content-area;
+		}
+
+		.widget-area {
+			@include widget-area;
+		}
+	}
+}
