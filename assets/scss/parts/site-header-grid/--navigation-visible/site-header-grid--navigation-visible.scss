@@ -1,0 +1,13 @@
+@mixin site-header-grid--navigation-visible {
+	display: flex;
+	flex-wrap: nowrap;
+
+	.col-full {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.storefront-primary-navigation {
+		order: -1;
+	}
+}

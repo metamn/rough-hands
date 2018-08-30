@@ -1,4 +1,7 @@
 @mixin site-branding {
+	width: 100%;
+	max-width: 400px;
+	
 	.custom-logo-link {
 		.custom-logo {
 			@include image--stretch;
