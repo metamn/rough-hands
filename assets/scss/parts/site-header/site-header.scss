@@ -1,0 +1,15 @@
+@mixin site-header {
+	display: flex;
+
+	.site-branding {
+		@include site-branding;
+	}
+
+	.secondary-navigation {
+		@include secondary-navigation;
+	}
+
+	.storefront-primary-navigation {
+		@include storefront-primary-navigation;
+	}
+}

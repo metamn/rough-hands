@@ -1,0 +1,7 @@
+@mixin site-branding {
+	.custom-logo-link {
+		.custom-logo {
+			@include image--stretch;
+		}
+	}
+}

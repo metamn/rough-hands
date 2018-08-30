@@ -78,8 +78,6 @@ Text Domain:    rough-hands
 /* - fixing big child elements breaking smaller parent's width and height in Firefox
 - http://stackoverflow.com/questions/26895349/how-can-i-get-ff-33-x-flexbox-behavior-in-ff-34-x
 */
-/* No files to import found in assets//scss//parts//**/
-/*.scss */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
      ========================================================================== */
@@ -584,6 +582,13 @@ html {
     @media only screen and (min-width: 1600.1px) {
       html body {
         font-size: 1.563em; } }
+    html body .site-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      html body .site-header .site-branding .custom-logo-link .custom-logo {
+        height: auto;
+        width: 100%; }
     html body .hidden {
       display: none; }
     html body .screen-reader-text {

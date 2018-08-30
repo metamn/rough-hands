@@ -13,7 +13,11 @@ html {
 		@include form-reset;
 		@include form;
 		@include text-style(default);
-		
+
+		.site-header {
+			@include site-header;
+		}
+
 		// Common classes
 		.hidden {
 			display: none;
