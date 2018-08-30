@@ -1,3 +1,15 @@
 @mixin handheld-navigation {
-	
+	@include margin(yes, no, yes, no);
+	@include padding;
+	@include border(normal, all);
+
+	width: 100%;
+
+	.menu {
+		@include ul;
+		@include ul--vertical;
+		@include ul--underlined;
+
+		width: 100%;
+	}
 }

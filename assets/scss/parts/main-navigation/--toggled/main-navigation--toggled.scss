@@ -1,4 +1,6 @@
 @mixin main-navigation--toggled {
+	flex-direction: column;
+	
 	.handheld-navigation {
 		display: flex;
 	}

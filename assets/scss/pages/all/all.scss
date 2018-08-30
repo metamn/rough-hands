@@ -14,6 +14,12 @@ html {
 		@include form;
 		@include text-style(default);
 
+		@include padding;
+
+		a {
+			@include link($type: not-underlined, $hover: underlined);
+		}
+
 		.site-header {
 			@include site-header;
 		}

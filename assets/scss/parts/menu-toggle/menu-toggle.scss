@@ -1,4 +1,6 @@
 @mixin menu-toggle {
+	@include margin(yes, no, no, no);
+	
 	@include mobile-and-up {
 		display: none;
 	}
