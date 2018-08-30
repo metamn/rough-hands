@@ -39,17 +39,17 @@ All these can be found at `inc/class-roughhands-template.php`.
 
 ## Styling
 
-It makes sense for the site's functionality to rely heavily on standard frameworks like Storefront, for stability and performance.
+It makes sense for the site's functionality to rely heavily on standard frameworks like Storefront for stability and performance.
 
-And there is a standard mechanism to build upon the parent theme functionality with template hooks, actions and filters.
+And there is built-in support to build upon the parent theme functionality with template hooks, actions and filters.
 
 None of these are true for the site's styling.
 
-What one can do is to overwrite manually the parent theme CSS styles which leads to more code, more bloat, less speed.
+Instead of built-in support what one can do is to overwrite manually the parent theme CSS styles which leads to more code, more bloat, less speed.
 
-On responsive design Storefront doesn't makes a difference between how the site looks on tablet / portrait mode (https://imgur.com/a/zW1ylHt) and laptop / landscape mode (https://imgur.com/a/Rx3X6Hn), and, it adds lots of code we don't need on mobile screens (https://imgur.com/a/Pxhu6o8).
+There are other caveats with the Storefront styling. On responsive design Storefront doesn't makes a difference between how the site looks on tablet / portrait mode (https://imgur.com/a/zW1ylHt) and laptop / landscape mode (https://imgur.com/a/Rx3X6Hn), and, it adds lots of code we don't need on mobile screens (https://imgur.com/a/Pxhu6o8).
 
-As a solution we are rebuilding the site's style from scratch using the same technologies (Underscore starter theme, SASS/SCSS code) as the parent theme.
+To get a clean code we rebuild the site's style from scratch using the same technologies (SASS/SCSS) as the parent theme.
 
 ### Node, Gulp, BEM
 
@@ -74,3 +74,7 @@ gulp
 ```
 
 The documentation for installing and using these technologies is out of scope of this current document. On request a tutorial can be put together.
+
+### Naming conventions
+
+CSS class names always follow HTML class names. This consistency is necessary for clean and maintainable code. 
