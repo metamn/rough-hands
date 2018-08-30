@@ -22,6 +22,10 @@ html {
 			@include site-content;
 		}
 
+		.site-footer {
+			@include site-footer;
+		}
+
 		// Common classes
 		.hidden {
 			display: none;

@@ -1,0 +1,5 @@
+@mixin footer-widgets {
+	.footer-widget-1 {
+		@include footer-widget-1;
+	}
+}

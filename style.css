@@ -881,6 +881,31 @@ html {
           margin-right: 1.25em; }
           html body .site-content .col-full .content-area .site-main .woocommerce-pagination .page-numbers .li + .li {
             margin-left: 0; }
+    html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%; }
+      html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        width: auto; }
+      html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure figcaption,
+      html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure .wp-caption-text {
+        background-color: "white";
+        color: "black";
+        font-size: 0.8em;
+        line-height: 1.5;
+        display: inline-block; }
+      html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure .figcaption,
+      html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure .wp-caption-text,
+      html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure figcaption {
+        display: none; }
     html body .hidden {
       display: none; }
     html body .screen-reader-text {

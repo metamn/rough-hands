@@ -1,0 +1,7 @@
+@mixin site-footer {
+	.col-full {
+		.footer-widgets {
+			@include footer-widgets;
+		}
+	}
+}
