@@ -77,4 +77,11 @@ The documentation for installing and using these technologies is out of scope of
 
 ### Naming conventions
 
-CSS class names always follow HTML class names. This consistency is necessary for clean and maintainable code. 
+CSS class names always follow HTML class names. This consistency is necessary for clean and maintainable code.
+
+CSS code structure is pretty straightforward. Inside the `assets/scss` folder you'll find:
+
+* `/framework` - a folder containing a custom CSS framework.
+* `/pages` - styles for pages
+* `/parts` - styles for all template parts
+* `/themes` - settings for this current theme.
