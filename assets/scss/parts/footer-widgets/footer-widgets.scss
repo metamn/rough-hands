@@ -2,4 +2,8 @@
 	.footer-widget-1 {
 		@include footer-widget-1;
 	}
+
+	@include laptop-and-up {
+		@include footer-widgets--all-in-a-row;
+	}
 }

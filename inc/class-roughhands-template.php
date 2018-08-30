@@ -166,6 +166,17 @@ function roughhands_storefront_footer_widget_columns( $widgets ) {
 add_action( 'storefront_footer_widget_columns', 'roughhands_storefront_footer_widget_columns', 10, 1 );
 
 
+/**
+ * Suffix widget title with ':'
+ *
+ * @param  string $title The widget title.
+ * @return string        The suffixed widget title
+ */
+function roughhands_widget_title( $title ) {
+	$title .= ':';
+	return $title;
+}
+add_filter( 'widget_title', 'roughhands_widget_title', 10, 1 );
 
 /**
  * Remove credit from footer

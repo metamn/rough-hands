@@ -1,0 +1,3 @@
+@mixin footer-widgets--all-in-a-row {
+	@include flexbox-grid(5, $lem, 0px, $grid-title: false, $iepx: 0px);
+}
