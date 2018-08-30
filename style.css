@@ -961,6 +961,30 @@ html {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-content .col-full {
+          margin-top: 1.25em; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-content .col-full {
+          margin-top: 2.5em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-content .col-full {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-content .col-full {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-content .col-full {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-content .col-full {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-content .col-full {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-content .col-full {
+          margin-right: 0; } }
       @media only screen and (min-width: 768px) {
         html body .site-content .col-full {
           display: -webkit-box;
@@ -996,7 +1020,8 @@ html {
         list-style: none; }
         html body .site-content .col-full .content-area .site-main .products .product .wp-post-image {
           height: auto;
-          width: 100%; }
+          max-width: 100%;
+          width: auto; }
         @media only screen and (min-width: 1025px) {
           html body .site-content .col-full .content-area .site-main .products {
             display: -webkit-box;
