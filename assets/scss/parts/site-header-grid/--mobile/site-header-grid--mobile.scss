@@ -1,0 +1,9 @@
+@mixin site-header-grid--mobile {
+	.secondary-navigation {
+		display: none;
+	}
+
+	.primary-navigation {
+		display: none;
+	}
+}

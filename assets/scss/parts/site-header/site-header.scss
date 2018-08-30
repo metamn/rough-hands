@@ -1,6 +1,6 @@
 @mixin site-header {
-	display: flex;
-
+	@include site-header-grid;
+	
 	.site-branding {
 		@include site-branding;
 	}

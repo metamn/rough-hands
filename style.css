@@ -582,13 +582,20 @@ html {
     @media only screen and (min-width: 1600.1px) {
       html body {
         font-size: 1.563em; } }
-    html body .site-header {
+    @media only screen and (max-width: 767.9px) {
+      html body .site-header .secondary-navigation {
+        display: none; }
+      html body .site-header .primary-navigation {
+        display: none; } }
+    html body .site-header .site-branding .custom-logo-link .custom-logo {
+      height: auto;
+      width: 100%; }
+    html body .site-header .storefront-primary-navigation .main-navigation .handheld-navigation {
+      display: none; }
+    html body .site-header .storefront-primary-navigation .main-navigation.toggled .handheld-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      html body .site-header .site-branding .custom-logo-link .custom-logo {
-        height: auto;
-        width: 100%; }
     html body .hidden {
       display: none; }
     html body .screen-reader-text {

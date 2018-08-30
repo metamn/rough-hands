@@ -1,0 +1,5 @@
+@mixin site-header-grid {
+	@include mobile {
+		@include site-header-grid--mobile;
+	}
+}

@@ -1,0 +1,18 @@
+@mixin main-navigation {
+	.menu-toggle {
+		@include menu-toggle;
+	}
+
+	.primary-navigation {
+		@include primary-navigation;
+	}
+
+	.handheld-navigation {
+		@include handheld-navigation;
+		display: none;
+	}
+
+	&.toggled {
+		@include main-navigation--toggled;
+	}
+}
