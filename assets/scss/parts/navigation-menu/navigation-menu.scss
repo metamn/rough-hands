@@ -1,0 +1,9 @@
+@mixin navigation-menu {
+	@include list($items: '.menu', $item: '.menu-item', $direction: horizontal);
+
+	.menu {
+		.menu-item {
+			margin-bottom: 0 !important;
+		}
+	}
+}

@@ -1,10 +1,13 @@
 @mixin site-header-grid--navigation-visible {
 	display: flex;
 	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
 
-	.col-full {
-		display: flex;
-		flex-wrap: nowrap;
+
+	.secondary-navigation,
+	.storefront-primary-navigation {
+		width: calc(((100% - #{$lem * 2}) - 400px) / 2);
 	}
 
 	.storefront-primary-navigation {

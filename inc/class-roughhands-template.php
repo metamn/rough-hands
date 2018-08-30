@@ -14,6 +14,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 /**
+ * Remove header container
+ *
+ * It adds an extra `<div class="col-full">` which makes header items alignment impossible with flexbox.
+ *
+ * @return void
+ */
+function roughhands_storefront_header_container() {
+	remove_action( 'storefront_header', 'storefront_header_container', 0 );
+	remove_action( 'storefront_header', 'storefront_header_container_close', 41 );
+}
+add_action( 'init', 'roughhands_storefront_header_container' );
+
+/**
  * Remove product search from header
  *
  * @link https://wordpress.stackexchange.com/questions/189062/remove-parent-theme-action-in-child#189066

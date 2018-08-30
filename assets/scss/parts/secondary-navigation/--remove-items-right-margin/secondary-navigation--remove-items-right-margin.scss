@@ -1,0 +1,9 @@
+@mixin secondary-navigation--remove-items-right-margin {
+	.menu-secondary-menu-container {
+		.menu {
+			.menu-item {
+				margin-right: 0 !important;
+			}
+		}
+	}
+}

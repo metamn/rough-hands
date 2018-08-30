@@ -1,5 +1,9 @@
 @mixin secondary-navigation {
 	.menu-secondary-menu-container {
-		@include list($items: '.menu', $item: '.menu-item', $direction: horizontal);
+		@include navigation-menu;
+
+		.menu {
+			justify-content: flex-end;
+		}
 	}
 }

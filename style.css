@@ -619,19 +619,25 @@ html {
         display: none; }
       html body .site-header .primary-navigation {
         display: none; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+      html body .site-header .secondary-navigation .menu-secondary-menu-container .menu .menu-item {
+        margin-right: 0 !important; } }
     @media only screen and (min-width: 768px) {
       html body .site-header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap; }
-        html body .site-header .col-full {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: nowrap;
-              flex-wrap: nowrap; }
+            flex-wrap: nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        html body .site-header .secondary-navigation,
+        html body .site-header .storefront-primary-navigation {
+          width: calc(((100% - 2.5em) - 400px) / 2); }
         html body .site-header .storefront-primary-navigation {
           -webkit-box-ordinal-group: 0;
               -ms-flex-order: -1;
@@ -734,6 +740,12 @@ html {
               margin-right: 0; } }
         html body .site-header .secondary-navigation .menu-secondary-menu-container .menu .navigation {
           display: none; }
+      html body .site-header .secondary-navigation .menu-secondary-menu-container .menu .menu-item {
+        margin-bottom: 0 !important; }
+      html body .site-header .secondary-navigation .menu-secondary-menu-container .menu {
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
     html body .site-header .storefront-primary-navigation .main-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -860,6 +872,8 @@ html {
                 margin-right: 0; } }
           html body .site-header .storefront-primary-navigation .main-navigation .primary-navigation .menu .navigation {
             display: none; }
+        html body .site-header .storefront-primary-navigation .main-navigation .primary-navigation .menu .menu-item {
+          margin-bottom: 0 !important; }
       html body .site-header .storefront-primary-navigation .main-navigation .handheld-navigation {
         border: 1px solid;
         width: 100%;

@@ -3,6 +3,10 @@
 		@include site-header-grid--navigation-not-visible;
 	}
 
+	@include tablet-portrait {
+		@include site-header-grid--navigation-expanded-vertically;
+	}
+
 	@include mobile-and-up {
 		@include site-header-grid--navigation-visible;
 	}

@@ -1,0 +1,5 @@
+@mixin site-header-grid--navigation-expanded-vertically {
+	.secondary-navigation {
+		@include secondary-navigation--remove-items-right-margin;
+	}
+}
