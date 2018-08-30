@@ -16,8 +16,9 @@
 
 // Default colors
 //
-$background-color: 'white';
-$text-color: 'black';
+$background-color: #fff;
+$text-color: #000;
+$gray: lighten($background-color, 50%);
 
 
 /**
