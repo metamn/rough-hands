@@ -1,6 +1,25 @@
 @mixin woocommerce-pagination {
-	.page-numbers {
+	@include margin(yes, no, no, no);
+	@include colors(inverted);
+
+	display: flex;
+	justify-content: center;
+
+	ul {
 		@include ul;
 		@include ul--horizontal;
+
+		li {
+			margin-bottom: 0;
+
+			span,
+			a {
+				@include padding(half, half, half, half);
+			}
+
+			&:last-of-type {
+				display: none;
+			}
+		}
 	}
 }

@@ -3,10 +3,12 @@
 	display: flex;
 	flex-wrap: wrap;
 
-	.li {
+	.li,
+	li {
 		margin-bottom: $margin;
 		margin-right: $margin;
 
+		+ .li,
 		+ .li {
 			margin-left: 0;
 		}
