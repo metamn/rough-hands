@@ -4,10 +4,26 @@
 	}
 
 	.price {
-		//
+		@include border(normal, all);
+		//@include padding;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		width: $lem * 3;
+		height: $lem * 3;
+
+		position: relative;
+
+		.amount {
+			position: absolute;
+		}
 	}
 
 	.product-short-description {
-		@include margin(half, no, half, no);
+		@include margin(no, no, no, yes);
+		@include padding(yes, no, yes, yes);
+		@include border(normal, left);
 	}
 }
