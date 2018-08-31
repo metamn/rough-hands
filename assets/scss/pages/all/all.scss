@@ -16,8 +16,11 @@ html {
 
 		@include padding;
 
-		a {
-			@include link($type: not-underlined, $hover: underlined);
+		display: flex;
+		justify-content: center;
+
+		.site {
+			@include site;
 		}
 
 		.site-header {

@@ -1,0 +1,10 @@
+@mixin site {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: $max-content-width;
+
+	a {
+		@include link($type: not-underlined, $hover: underlined);
+	}
+}

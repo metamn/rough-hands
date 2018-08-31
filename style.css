@@ -489,7 +489,13 @@ html {
     font-family: ChaparralPro-Regular;
     background-color: #fff;
     color: #000;
-    letter-spacing: 1.25px; }
+    letter-spacing: 1.25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     html body h1,
     html body h2,
     html body h3,
@@ -606,14 +612,26 @@ html {
     @media only screen and (min-width: 768px) {
       html body {
         padding-right: 2.5em; } }
-    html body a {
-      background-color: #fff;
-      color: #000;
-      text-decoration: none;
-      transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-      will-change: text-decoration; }
-      html body a:hover, html body a:active {
-        text-decoration: underline; }
+    html body .site {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      max-width: calc(1392px + 5em); }
+      html body .site a {
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+        transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+        will-change: text-decoration; }
+        html body .site a:hover, html body .site a:active {
+          text-decoration: underline; }
     @media only screen and (max-width: 767.9px) {
       html body .site-header .secondary-navigation {
         display: none; }

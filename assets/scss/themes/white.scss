@@ -84,6 +84,11 @@ $left: $lem * 2;
 $top-mobile: $lem;
 $left-mobile: $lem;
 
+// Image width is the thing we build the design around.
+// - it has a fixed size of 464px;
+$image-width: 464px;
+$max-content-width: calc(#{$image-width * 3} + #{$left * 2});
+
 
 /**
  * Decorations
