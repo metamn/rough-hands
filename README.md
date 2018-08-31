@@ -85,3 +85,23 @@ CSS code structure is pretty straightforward. Inside the `assets/scss` folder yo
 * `/pages` - styles for pages
 * `/parts` - styles for all template parts
 * `/themes` - settings for this current theme.
+
+
+## Design
+
+If 'Rough Hands' then let the design be a little rough.
+
+I took the courage to use your design as a suggestion and rethink it. My best skills are not replicating a Photoshop comp to HTML and CSS but create unique designs which delivers the brand message.
+
+Rough Hands has the following major characteristics:
+
+1. It's Rough.
+2. It sells things identified mostly as beautiful images.
+3. The images have a relatively small size of 464px each.
+
+The design thinking was driven by the images. On all screens (mobile, tablet, laptop) they are let to be displayed in their original size, unconstrained, to draw the necessary attention by their simple beauty.
+
+The remaining space around the image is used to display the other facts about the product we are selling, styled according to their order of importance (as important as stronger): product name, price, call to action, and short description.
+
+This spacing of elements / styling elements according to their importance led to different product design on different screens.
+ 
