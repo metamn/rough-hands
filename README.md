@@ -105,4 +105,4 @@ The remaining space around the image was used to display the other facts about t
 
 This spacing of elements / styling elements according to their importance led to different product design on different screens.
 
-![The product on screens in portrait mode](https://imgur.com/a/v9IKYZB)
+![The product on screens in portrait mode](https://i.imgur.com/1gTaWBgl.jpg)
