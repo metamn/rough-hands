@@ -1,5 +1,13 @@
 @mixin product {
+	.woocommerce-loop-product__link {
+		@include link($type: not-underlined, $hover: not-underlined);
+	}
+
 	.wp-post-image {
 		@include image--do-not-stretch;
+	}
+
+	.product-information {
+		@include product-information;
 	}
 }

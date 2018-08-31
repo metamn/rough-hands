@@ -29,4 +29,8 @@
 	@if ($hover == linethrough) {
 		@include link--hover--linethrough;
 	}
+
+	@if ($hover == not-underlined) {
+		@include link--hover--not-underlined;
+	}
 }

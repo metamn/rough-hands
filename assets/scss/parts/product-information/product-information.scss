@@ -1,0 +1,13 @@
+@mixin product-information {
+	.woocommerce-loop-product__title {
+		@include text-style(product-title);
+	}
+
+	.price {
+		//
+	}
+
+	.product-short-description {
+		@include margin(half, no, half, no);
+	}
+}

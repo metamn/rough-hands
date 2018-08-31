@@ -51,6 +51,8 @@
 	// - The title of the product
 	@if ($variant == 'product-title') {
 		@include font(product-title);
+		@include scale(large-2);
+		line-height: $line-height-smaller;
 	}
 
 

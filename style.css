@@ -1045,10 +1045,70 @@ html {
           display: none; } }
       html body .site-content .col-full .content-area .site-main .products {
         list-style: none; }
-        html body .site-content .col-full .content-area .site-main .products .product .wp-post-image {
-          height: auto;
-          max-width: 100%;
-          width: auto; }
+
+@media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-top: 1.25em; } }
+
+@media only screen and (max-width: 767.9px) and (min-width: 768px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-top: 2.5em; } }
+
+@media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-bottom: 0; } }
+
+@media only screen and (max-width: 767.9px) and (min-width: 768px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-bottom: 0; } }
+
+@media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-left: 0; } }
+
+@media only screen and (max-width: 767.9px) and (min-width: 768px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-left: 0; } }
+
+@media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-right: 0; } }
+
+@media only screen and (max-width: 767.9px) and (min-width: 768px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-right: 0; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (max-width: 767.9px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-top: 1.25em; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-width: 768px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-top: 2.5em; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (max-width: 767.9px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-bottom: 0; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-width: 768px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-bottom: 0; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (max-width: 767.9px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-left: 0; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-width: 768px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-left: 0; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (max-width: 767.9px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-right: 0; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-width: 768px) {
+  html body .site-content .col-full .content-area .site-main .products .product + .product {
+    margin-right: 0; } }
         @media only screen and (min-width: 1025px) {
           html body .site-content .col-full .content-area .site-main .products {
             display: -webkit-box;
@@ -1068,6 +1128,48 @@ html {
               width: calc(33.33333% - (((3 - 1) * 1.25em) / 3) - 0px); }
               html body .site-content .col-full .content-area .site-main .products > *:nth-child(3n) {
                 margin-right: 0; } }
+        html body .site-content .col-full .content-area .site-main .products .product .woocommerce-loop-product__link {
+          background-color: #fff;
+          color: #000;
+          text-decoration: none;
+          transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+          will-change: text-decoration; }
+          html body .site-content .col-full .content-area .site-main .products .product .woocommerce-loop-product__link:hover, html body .site-content .col-full .content-area .site-main .products .product .woocommerce-loop-product__link:active {
+            text-decoration: none; }
+        html body .site-content .col-full .content-area .site-main .products .product .wp-post-image {
+          height: auto;
+          max-width: 100%;
+          width: auto; }
+        html body .site-content .col-full .content-area .site-main .products .product .product-information .woocommerce-loop-product__title {
+          font-style: normal;
+          font-weight: normal;
+          font-family: AlternateGothicNo2BT-Regular;
+          font-size: 1.563em;
+          line-height: 1.1; }
+        @media only screen and (max-width: 767.9px) {
+          html body .site-content .col-full .content-area .site-main .products .product .product-information .product-short-description {
+            margin-top: 0.625em; } }
+        @media only screen and (min-width: 768px) {
+          html body .site-content .col-full .content-area .site-main .products .product .product-information .product-short-description {
+            margin-top: 1.25em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .site-content .col-full .content-area .site-main .products .product .product-information .product-short-description {
+            margin-bottom: 0.625em; } }
+        @media only screen and (min-width: 768px) {
+          html body .site-content .col-full .content-area .site-main .products .product .product-information .product-short-description {
+            margin-bottom: 1.25em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .site-content .col-full .content-area .site-main .products .product .product-information .product-short-description {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .site-content .col-full .content-area .site-main .products .product .product-information .product-short-description {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .site-content .col-full .content-area .site-main .products .product .product-information .product-short-description {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .site-content .col-full .content-area .site-main .products .product .product-information .product-short-description {
+            margin-right: 0; } }
       html body .site-content .col-full .content-area .site-main .woocommerce-pagination .page-numbers {
         list-style: none;
         -webkit-box-align: center;

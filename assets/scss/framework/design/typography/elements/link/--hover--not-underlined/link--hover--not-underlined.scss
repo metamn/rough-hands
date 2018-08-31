@@ -1,0 +1,8 @@
+@mixin link--hover--not-underlined {
+	@include transition(text-decoration);
+
+	&:hover,
+	&:active {
+		@include link--not-underlined;
+	}
+}

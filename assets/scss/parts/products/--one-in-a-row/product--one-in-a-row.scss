@@ -1,0 +1,7 @@
+@mixin product--one-in-a-row {
+	.product {
+		+ .product {
+			@include margin(yes, no, no, no);
+		}
+	}
+}

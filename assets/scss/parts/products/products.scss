@@ -1,6 +1,14 @@
 @mixin products {
 	@include ul;
 
+	@include mobile {
+		@include product--one-in-a-row;
+	}
+
+	@include tablet {
+		@include product--one-in-a-row;
+	}
+
 	@include laptop-and-up {
 		@include products--three-in-a-row;
 	}

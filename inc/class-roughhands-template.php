@@ -136,10 +136,16 @@ function roughhands_single_product_archive_thumbnail_size( $size ) {
 add_filter( 'single_product_archive_thumbnail_size', 'roughhands_single_product_archive_thumbnail_size' );
 
 
+/**
+ * Wrap product title and description into a div.
+ *
+ * @return void
+ */
 function roughhands_woocommerce_before_shop_loop_item_title() {
 	echo '<div class="product-information">';
 }
 add_action( 'woocommerce_before_shop_loop_item_title', 'roughhands_woocommerce_before_shop_loop_item_title', 10 );
+
 
 /**
  * Display product short description.
