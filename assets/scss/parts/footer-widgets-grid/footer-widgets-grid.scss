@@ -1,6 +1,5 @@
 @mixin footer-widgets-grid {
-	.footer-widget-1,
-	.footer-widget-2 {
-		@include margin(no, no, yes, no);
+	@include laptop-and-up {
+		@include flexbox-grid(3, $lem, $lem, $grid-title: false, $iepx: 0px);
 	}
 }
