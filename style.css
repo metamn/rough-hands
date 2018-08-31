@@ -1147,22 +1147,47 @@ html {
           font-size: 1.563em;
           line-height: 1.1; }
         html body .site-content .col-full .content-area .site-main .products .product .product-information .price {
-          border: 1px solid;
+          background-color: #000;
+          color: #fff;
+          border-radius: 3.75em;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
-          border-radius: 50%;
-          width: 3.75em;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
           height: 3.75em;
-          position: relative; }
-          html body .site-content .col-full .content-area .site-main .products .product .product-information .price .amount {
-            position: absolute; }
+          min-height: 3.75em;
+          min-width: 3.75em;
+          width: 3.75em;
+          overflow: hidden; }
+          @media only screen and (max-width: 767.9px) {
+            html body .site-content .col-full .content-area .site-main .products .product .product-information .price {
+              margin-left: 0.3125em; } }
+          @media only screen and (min-width: 768px) {
+            html body .site-content .col-full .content-area .site-main .products .product .product-information .price {
+              margin-left: 0.625em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .site-content .col-full .content-area .site-main .products .product .product-information .price {
+              margin-top: 0.625em; } }
+          @media only screen and (min-width: 768px) {
+            html body .site-content .col-full .content-area .site-main .products .product .product-information .price {
+              margin-top: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .site-content .col-full .content-area .site-main .products .product .product-information .price {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .site-content .col-full .content-area .site-main .products .product .product-information .price {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .site-content .col-full .content-area .site-main .products .product .product-information .price {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .site-content .col-full .content-area .site-main .products .product .product-information .price {
+              margin-right: 0; } }
         html body .site-content .col-full .content-area .site-main .products .product .product-information .product-short-description {
           border-left: 1px solid; }
           @media only screen and (max-width: 767.9px) {

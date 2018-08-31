@@ -1,4 +1,47 @@
 @mixin margin($t: yes, $r: yes, $b: yes, $l: yes) {
+	@if ($t == 'quarter') {
+		@include mobile {
+			margin-top: $top-mobile / 4;
+		}
+
+		@include mobile-and-up {
+			margin-top: $top / 4;
+		}
+	}
+
+
+	@if ($b == 'quarter') {
+		@include mobile {
+			margin-bottom: $top-mobile / 4;
+		}
+
+		@include mobile-and-up {
+			margin-bottom: $top / 4;
+		}
+	}
+
+
+	@if ($l == 'quarter') {
+		@include mobile {
+			margin-left: $left-mobile / 4;
+		}
+
+		@include mobile-and-up {
+			margin-left: $left / 4;
+		}
+	}
+
+
+	@if ($r == 'quarter') {
+		@include mobile {
+			margin-right: $left-mobile / 4;
+		}
+
+		@include mobile-and-up {
+			margin-right: $left / 4;
+		}
+	}
+
 	@if ($t == 'half') {
 		@include mobile {
 			margin-top: $top-mobile / 2;

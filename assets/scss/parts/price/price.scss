@@ -1,0 +1,4 @@
+@mixin price {
+	@include circle;
+	@include margin(half, no, no, quarter);
+}

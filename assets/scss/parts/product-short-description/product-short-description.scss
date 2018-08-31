@@ -1,0 +1,5 @@
+@mixin product-short-description {
+	@include margin(no, no, no, yes);
+	@include padding(yes, no, yes, yes);
+	@include border(normal, left);
+}
