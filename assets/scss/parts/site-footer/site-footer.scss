@@ -1,4 +1,7 @@
 @mixin site-footer {
+	@include margin(yes, no, no, no);
+	@include background-pattern--horizontal-lines-white;
+	
 	.col-full {
 		.footer-widgets {
 			@include footer-widgets;

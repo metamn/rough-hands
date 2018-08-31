@@ -1353,52 +1353,131 @@ html {
         @media only screen and (min-width: 768px) {
           html body .site-content .col-full .widget-area .widget.widget_product_categories {
             padding-bottom: 1.25em; } }
-    html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget .widget-title {
-      display: none; }
-    html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      width: 100%; }
-      html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure img {
-        display: block;
-        height: auto;
-        max-width: 100%;
-        width: auto; }
-      html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure figcaption,
-      html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure .wp-caption-text {
-        background-color: #fff;
-        color: #000;
-        font-size: 0.8em;
-        line-height: 1.5;
-        display: inline-block; }
-      html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure .figcaption,
-      html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure .wp-caption-text,
-      html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure figcaption {
+    html body .site-footer {
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII="); }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-footer {
+          margin-top: 1.25em; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-footer {
+          margin-top: 2.5em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-footer {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-footer {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-footer {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-footer {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-footer {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-footer {
+          margin-right: 0; } }
+      html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget .widget-title {
         display: none; }
-    @media only screen and (min-width: 1025px) {
-      html body .site-footer .col-full .footer-widgets {
+      html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: horizontal;
+        -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-        html body .site-footer .col-full .footer-widgets > * {
-          box-sizing: border-box;
-          margin-bottom: 0px;
-          margin-right: 1.25em; }
-        html body .site-footer .col-full .footer-widgets > * {
-          width: calc(20% - (((5 - 1) * 1.25em) / 5) - 0px); }
-          html body .site-footer .col-full .footer-widgets > *:nth-child(5n) {
-            margin-right: 0; } }
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%; }
+        html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure img {
+          display: block;
+          height: auto;
+          max-width: 100%;
+          width: auto; }
+        html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure figcaption,
+        html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure .wp-caption-text {
+          background-color: #fff;
+          color: #000;
+          font-size: 0.8em;
+          line-height: 1.5;
+          display: inline-block; }
+        html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure .figcaption,
+        html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure .wp-caption-text,
+        html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure figcaption {
+          display: none; }
+      @media only screen and (min-width: 1025px) {
+        html body .site-footer .col-full .footer-widgets {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          html body .site-footer .col-full .footer-widgets > * {
+            box-sizing: border-box;
+            margin-bottom: 0px;
+            margin-right: 1.25em; }
+          html body .site-footer .col-full .footer-widgets > * {
+            width: calc(20% - (((5 - 1) * 1.25em) / 5) - 0px); }
+            html body .site-footer .col-full .footer-widgets > *:nth-child(5n) {
+              margin-right: 0; } }
+      html body .site-footer .col-full .footer-widgets .widget {
+        background-color: #fff;
+        color: #000; }
+        @media only screen and (max-width: 767.9px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            margin-top: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            margin-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            margin-bottom: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            margin-bottom: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            margin-left: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            margin-left: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            margin-right: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            margin-right: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            padding-top: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            padding-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            padding-bottom: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            padding-bottom: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            padding-left: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            padding-left: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            padding-right: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .site-footer .col-full .footer-widgets .widget {
+            padding-right: 2.5em; } }
+        html body .site-footer .col-full .footer-widgets .widget .widget-title {
+          display: none; }
     html body .hidden {
       display: none; }
     html body .screen-reader-text {
