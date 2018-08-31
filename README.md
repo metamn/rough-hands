@@ -103,6 +103,8 @@ The design thinking was driven by the images. On all screens (mobile, tablet, la
 
 The remaining space around the image was used to display the other facts about the product we are selling, styled according to their order of importance (as important as with stronger design): product name, price, call to action, and short description.
 
-This spacing of elements / styling elements according to their importance led to different product design on different screens.
+This spacing of elements, and, the styling of elements according to their importance led to different product design on different types of screens.
+
+## Product on portrait
 
 ![The product on screens in portrait mode](https://i.imgur.com/1gTaWBgl.jpg)
