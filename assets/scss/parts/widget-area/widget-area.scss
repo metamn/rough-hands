@@ -1,3 +1,15 @@
 @mixin widget-area {
+	.widget {
+		&.widget_product_categories {
+			@include slider('ul', 'li', $product-categories-slider-width, auto);
 
+			@include border(normal, top);
+			@include border(normal, bottom);
+			@include padding(half, no, half, no);
+
+			.product-categories {
+				@include product-categories;
+			}
+		}
+	}
 }

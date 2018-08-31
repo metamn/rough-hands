@@ -89,6 +89,12 @@ $left-mobile: $lem;
 $image-width: 464px;
 $max-content-width: calc(#{$image-width * 3} + #{$left * 2});
 
+// Product categories is a slider with horizontal scrollbar
+// - it needs as input the width of the slider items
+// - which must be the length of the longest category
+$product-categories-slider-width: $lem * 7;
+
+
 
 /**
  * Decorations

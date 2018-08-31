@@ -1,14 +1,7 @@
 @mixin site-content-grid {
+	@include site-content-grid--product-categories-first;
 	@include margin(yes, no, no, no);
-	
+
 	display: flex;
 	flex-direction: column;
-
-	@include mobile-and-up {
-		@include site-content-grid--product-categories-first;
-	}
-
-	@include laptop-and-up {
-		@include site-content-grid--display-horizontal;
-	}
 }

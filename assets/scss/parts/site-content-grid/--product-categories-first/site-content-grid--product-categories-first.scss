@@ -10,6 +10,7 @@
 	}
 
 	.content-area {
+		@include margin(yes, no, no, no);
 		order: 3;
 	}
 }

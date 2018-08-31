@@ -1,0 +1,24 @@
+@mixin slider($slides, $slide, $slide-width: 33vmin, $slide-height: auto) {
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	height: $slide-height;
+
+	#{$slides} {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+
+		#{$slide} {
+			@include padding(no, yes, no, no);
+			
+			width: $slide-width;
+			height: $slide-height;
+			display: table-cell;
+
+			&:last-of-type {
+				@include padding(no, no, no, no);
+			}
+		}
+	}
+}
