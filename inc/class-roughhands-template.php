@@ -180,15 +180,15 @@ add_filter( 'woocommerce_pagination_args', 'roughhands_woocommerce_pagination_ar
 
 
 /**
- * Add another footer widget.
+ * Add / remove footer widget.
  *
- * By default there are 4 widgets and we need 5.
+ * By default there are 4 widgets and we need 3.
  *
  * @param  integer $widgets The number of widgets.
  * @return integer          The updated number of widgets.
  */
 function roughhands_storefront_footer_widget_columns( $widgets ) {
-	$widgets = 5;
+	$widgets = 3;
 	return $widgets;
 }
 add_action( 'storefront_footer_widget_columns', 'roughhands_storefront_footer_widget_columns', 10, 1 );

@@ -5,15 +5,7 @@
 		@include widget;
 	}
 
-	.footer-widget-1 {
-		@include footer-widget-1;
-	}
-
-	.footer-widget-3 {
-		@include footer-widget-3;
-	}
-
-	.footer-widget-4 {
-		@include footer-widget-4;
+	.footer-widget-2 {
+		@include footer-widget-2;
 	}
 }

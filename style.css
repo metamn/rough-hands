@@ -1394,7 +1394,16 @@ html {
           html body .site-footer .col-full .footer-widgets > * {
             width: calc(33.33333% - (((3 - 1) * 1.25em) / 3) - 0px); }
             html body .site-footer .col-full .footer-widgets > *:nth-child(3n) {
-              margin-right: 0; } }
+              margin-right: 0; }
+          html body .site-footer .col-full .footer-widgets .block {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            html body .site-footer .col-full .footer-widgets .block:nth-of-type(2) {
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column; } }
       html body .site-footer .col-full .footer-widgets .widget {
         background-color: #fff;
         color: #000; }
@@ -1472,78 +1481,11 @@ html {
             border-bottom: 1px solid;
             margin-bottom: 0.625em;
             padding-bottom: 0.625em; }
-      html body .site-footer .col-full .footer-widgets .footer-widget-1 {
-        display: none; }
-        html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          width: 100%; }
-          html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure img {
-            display: block;
-            height: auto;
-            max-width: 100%;
-            width: auto; }
-          html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure figcaption,
-          html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure .wp-caption-text {
-            background-color: #fff;
-            color: #000;
-            font-size: 0.8em;
-            line-height: 1.5;
-            display: inline-block; }
-          html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure .figcaption,
-          html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure .wp-caption-text,
-          html body .site-footer .col-full .footer-widgets .footer-widget-1 .widget figure figcaption {
-            display: none; }
-      html body .site-footer .col-full .footer-widgets .footer-widget-3 .widget {
+      html body .site-footer .col-full .footer-widgets .footer-widget-2 .widget:first-of-type {
         margin-bottom: 0 !important;
         padding-bottom: 0 !important; }
-      @media only screen and (max-width: 767.9px) {
-        html body .site-footer .col-full .footer-widgets .footer-widget-4 .widget {
-          margin-bottom: 1.25em; } }
-      @media only screen and (min-width: 768px) {
-        html body .site-footer .col-full .footer-widgets .footer-widget-4 .widget {
-          margin-bottom: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .site-footer .col-full .footer-widgets .footer-widget-4 .widget {
-          margin-left: 1.25em; } }
-      @media only screen and (min-width: 768px) {
-        html body .site-footer .col-full .footer-widgets .footer-widget-4 .widget {
-          margin-left: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .site-footer .col-full .footer-widgets .footer-widget-4 .widget {
-          margin-right: 1.25em; } }
-      @media only screen and (min-width: 768px) {
-        html body .site-footer .col-full .footer-widgets .footer-widget-4 .widget {
-          margin-right: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .site-footer .col-full .footer-widgets .footer-widget-4 .widget {
-          margin-top: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .site-footer .col-full .footer-widgets .footer-widget-4 .widget {
-          margin-top: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .site-footer .col-full .footer-widgets .footer-widget-4 .widget {
-          padding-bottom: 1.25em; } }
-      @media only screen and (min-width: 768px) {
-        html body .site-footer .col-full .footer-widgets .footer-widget-4 .widget {
-          padding-bottom: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .site-footer .col-full .footer-widgets .footer-widget-4 .widget {
-          padding-left: 1.25em; } }
-      @media only screen and (min-width: 768px) {
-        html body .site-footer .col-full .footer-widgets .footer-widget-4 .widget {
-          padding-left: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .site-footer .col-full .footer-widgets .footer-widget-4 .widget {
-          padding-right: 1.25em; } }
-      @media only screen and (min-width: 768px) {
-        html body .site-footer .col-full .footer-widgets .footer-widget-4 .widget {
-          padding-right: 2.5em; } }
+      html body .site-footer .col-full .footer-widgets .footer-widget-2 .widget:last-of-type {
+        margin-top: 0 !important; }
     html body .hidden {
       display: none; }
     html body .screen-reader-text {

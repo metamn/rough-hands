@@ -1,5 +1,13 @@
 @mixin footer-widgets-grid {
 	@include laptop-and-up {
 		@include flexbox-grid(3, $lem, $lem, $grid-title: false, $iepx: 0px);
+
+		.block {
+			display: flex;
+
+			&:nth-of-type(2) {
+				flex-direction: column;
+			}
+		}
 	}
 }
