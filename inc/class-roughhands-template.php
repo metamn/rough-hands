@@ -12,11 +12,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
-
 /**
  * Remove header container
  *
- * It adds an extra `<div class="col-full">` which makes header items alignment impossible with flexbox.
+ * It adds an extra `<div class="col-full">`.
+ * Which makes header items alignment impossible with flexbox.
  *
  * @return void
  */
@@ -25,6 +25,7 @@ function roughhands_storefront_header_container() {
 	remove_action( 'storefront_header', 'storefront_header_container_close', 41 );
 }
 add_action( 'init', 'roughhands_storefront_header_container' );
+
 
 /**
  * Remove product search from header
@@ -135,13 +136,21 @@ function roughhands_single_product_archive_thumbnail_size( $size ) {
 add_filter( 'single_product_archive_thumbnail_size', 'roughhands_single_product_archive_thumbnail_size' );
 
 
+function roughhands_woocommerce_before_shop_loop_item_title() {
+	echo '<div class="product-information">';
+}
+add_action( 'woocommerce_before_shop_loop_item_title', 'roughhands_woocommerce_before_shop_loop_item_title', 10 );
+
 /**
  * Display product short description.
  *
  * @return void
  */
 function roughhands_woocommerce_after_shop_loop_item_title() {
+	echo '<div class="product-short-description">';
 	the_excerpt();
+	echo '</div>';
+	echo '</div>'; // Stands for `product-information`.
 }
 add_action( 'woocommerce_after_shop_loop_item_title', 'roughhands_woocommerce_after_shop_loop_item_title', 10, 0 );
 
