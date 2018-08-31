@@ -1,9 +1,7 @@
 @mixin footer-widget-1 {
+	display: none;
+	
 	.widget {
-		.widget-title {
-			display: none;
-		}
-		
 		figure {
 			@include figure;
 			@include figure--without-figcaption;

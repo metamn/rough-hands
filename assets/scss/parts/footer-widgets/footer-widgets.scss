@@ -1,19 +1,11 @@
 @mixin footer-widgets {
+	@include footer-widgets-grid;
+	
+	.widget {
+		@include widget;
+	}
+
 	.footer-widget-1 {
 		@include footer-widget-1;
-	}
-
-	@include laptop-and-up {
-		@include footer-widgets--all-in-a-row;
-	}
-
-	.widget {
-		@include margin;
-		@include padding;
-		@include colors;
-
-		.widget-title {
-			display: none;
-		}
 	}
 }

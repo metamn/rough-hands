@@ -1,0 +1,15 @@
+@mixin widget {
+	@include colors;
+	@include margin;
+	@include padding;
+
+	.widget-title {
+		display: none;
+	}
+
+	ul {
+		@include ul;
+		@include ul--horizontal;
+		@include ul--underlined;
+	}
+}

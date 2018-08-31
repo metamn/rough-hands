@@ -1,0 +1,6 @@
+@mixin footer-widgets-grid {
+	.footer-widget-1,
+	.footer-widget-2 {
+		@include margin(no, no, yes, no);
+	}
+}
