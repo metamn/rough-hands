@@ -96,12 +96,13 @@ I took the courage to use your design as a suggestion and rethink it. My best sk
 Rough Hands has the following major characteristics:
 
 1. It's Rough.
-2. It sells things identified mostly as beautiful images.
+2. It sells things identified mostly by beautiful images.
 3. The images have a relatively small size of 464px each.
 
 The design thinking was driven by the images. On all screens (mobile, tablet, laptop) they are let to be displayed in their original size, unconstrained, to draw the necessary attention by their simple beauty.
 
-The remaining space around the image is used to display the other facts about the product we are selling, styled according to their order of importance (as important as stronger): product name, price, call to action, and short description.
+The remaining space around the image was used to display the other facts about the product we are selling, styled according to their order of importance (as important as with stronger design): product name, price, call to action, and short description.
 
 This spacing of elements / styling elements according to their importance led to different product design on different screens.
- 
+
+![The product on screens in portrait mode](https://imgur.com/a/v9IKYZB)
