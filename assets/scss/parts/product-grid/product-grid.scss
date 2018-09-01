@@ -1,5 +1,13 @@
 @mixin product-grid {
+	@include portrait {
+		@include product-grid--display-vertical;
+	}
+	
 	@include tablet-landscape {
 		@include product-grid--display-horizontal;
+	}
+
+	@include laptop-and-up {
+		@include product-grid--display-vertical-fuzzy;
 	}
 }

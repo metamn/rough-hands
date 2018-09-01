@@ -1,0 +1,16 @@
+@mixin product-grid--display-vertical-fuzzy {
+	.product-information {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+
+		// To make titles spanning multiple lines look good
+		.woocommerce-loop-product__title {
+			max-width: 70%;
+		}
+	}
+
+	.button {
+		margin-left: $lem / 2;
+	}
+}
