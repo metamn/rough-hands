@@ -1,0 +1,5 @@
+@mixin footer-widget-1--display-vertical {
+	.contact {
+		@include margin(yes, no, no, no);
+	}
+}

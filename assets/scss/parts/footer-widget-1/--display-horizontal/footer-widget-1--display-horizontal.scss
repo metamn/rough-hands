@@ -1,0 +1,9 @@
+@mixin footer-widget-1--display-horizontal {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+
+	.contact {
+		@include margin(no, no, no, no);
+	}
+}

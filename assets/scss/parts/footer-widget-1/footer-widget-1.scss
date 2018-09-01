@@ -1,5 +1,11 @@
 @mixin footer-widget-1 {
-	.contact {
-		@include margin(yes, no, no, no);
+	.widget {
+		.textwidget {
+			@include footer-widget-1--display-vertical;
+
+			@include tablet-landscape {
+				@include footer-widget-1--display-horizontal;
+			}
+		}
 	}
 }
