@@ -631,7 +631,7 @@ html {
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
         will-change: text-decoration; }
         html body .site a:hover, html body .site a:active {
-          text-decoration: underline; }
+          text-decoration: line-through; }
     @media only screen and (max-width: 767.9px) {
       html body .site-header .secondary-navigation {
         display: none; }
