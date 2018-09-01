@@ -2,7 +2,7 @@
 	.cat-item {
 		&.current-cat {
 			a {
-				@include link($type: linethrough, $hover: not-underlined);
+				@include link($color-scheme: inverted, $type: linethrough, $hover: not-underlined);
 			}
 		}
 	}

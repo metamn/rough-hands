@@ -10,7 +10,7 @@
 			// when a product category is clicked the `Store` menu gets inactivated.
 			&.current-menu-item.menu-item-object-page {
 				a {
-					@include link($type: linethrough, $hover: not-underlined);
+					@include link($color-scheme: inverted, $type: linethrough, $hover: not-underlined);
 				}
 			}
 		}

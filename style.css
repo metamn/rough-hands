@@ -764,8 +764,8 @@ html {
       html body .site-header .secondary-navigation .menu-secondary-menu-container .menu .menu-item {
         margin-bottom: 0 !important; }
         html body .site-header .secondary-navigation .menu-secondary-menu-container .menu .menu-item.current-menu-item.menu-item-object-page a {
-          background-color: #fff;
-          color: #000;
+          background-color: #000;
+          color: #fff;
           text-decoration: line-through;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
           will-change: text-decoration; }
@@ -904,8 +904,8 @@ html {
         html body .site-header .storefront-primary-navigation .main-navigation .primary-navigation .menu .menu-item {
           margin-bottom: 0 !important; }
           html body .site-header .storefront-primary-navigation .main-navigation .primary-navigation .menu .menu-item.current-menu-item.menu-item-object-page a {
-            background-color: #fff;
-            color: #000;
+            background-color: #000;
+            color: #fff;
             text-decoration: line-through;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
             will-change: text-decoration; }
@@ -1463,8 +1463,8 @@ html {
               letter-spacing: 2.5px;
               text-transform: uppercase; } }
       html body .site-content .col-full .widget-area .widget.widget_product_categories .product-categories .cat-item.current-cat a {
-        background-color: #fff;
-        color: #000;
+        background-color: #000;
+        color: #fff;
         text-decoration: line-through;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
         will-change: text-decoration; }
