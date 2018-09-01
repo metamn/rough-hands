@@ -1509,10 +1509,10 @@ html {
               flex-wrap: wrap; }
           html body .site-footer .col-full .footer-widgets > * {
             box-sizing: border-box;
-            margin-bottom: 1.25em;
-            margin-right: 1.25em; }
+            margin-bottom: 0px;
+            margin-right: 0px; }
           html body .site-footer .col-full .footer-widgets > * {
-            width: calc(33.33333% - (((3 - 1) * 1.25em) / 3) - 0px); }
+            width: calc(33.33333% - (((3 - 1) * 0px) / 3) - 0px); }
             html body .site-footer .col-full .footer-widgets > *:nth-child(3n) {
               margin-right: 0; }
           html body .site-footer .col-full .footer-widgets .block {
@@ -1520,10 +1520,34 @@ html {
             display: -ms-flexbox;
             display: flex; }
             html body .site-footer .col-full .footer-widgets .block:nth-of-type(2) {
-              -webkit-box-orient: vertical;
-              -webkit-box-direction: normal;
-                  -ms-flex-direction: column;
-                      flex-direction: column; } }
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+            html body .site-footer .col-full .footer-widgets .block .widget {
+              width: 100%; } }
+      @media only screen and (min-width: 1025px) and (max-width: 767.9px) {
+        html body .site-footer .col-full .footer-widgets .block .widget {
+          margin-top: 0.625em; } }
+      @media only screen and (min-width: 1025px) and (min-width: 768px) {
+        html body .site-footer .col-full .footer-widgets .block .widget {
+          margin-top: 1.25em; } }
+      @media only screen and (min-width: 1025px) and (max-width: 767.9px) {
+        html body .site-footer .col-full .footer-widgets .block .widget {
+          margin-bottom: 0.625em; } }
+      @media only screen and (min-width: 1025px) and (min-width: 768px) {
+        html body .site-footer .col-full .footer-widgets .block .widget {
+          margin-bottom: 1.25em; } }
+      @media only screen and (min-width: 1025px) and (max-width: 767.9px) {
+        html body .site-footer .col-full .footer-widgets .block .widget {
+          margin-left: 0.625em; } }
+      @media only screen and (min-width: 1025px) and (min-width: 768px) {
+        html body .site-footer .col-full .footer-widgets .block .widget {
+          margin-left: 1.25em; } }
+      @media only screen and (min-width: 1025px) and (max-width: 767.9px) {
+        html body .site-footer .col-full .footer-widgets .block .widget {
+          margin-right: 0.625em; } }
+      @media only screen and (min-width: 1025px) and (min-width: 768px) {
+        html body .site-footer .col-full .footer-widgets .block .widget {
+          margin-right: 1.25em; } }
       html body .site-footer .col-full .footer-widgets .widget {
         background-color: #fff;
         color: #000; }
@@ -1664,7 +1688,8 @@ html {
         margin-bottom: 0 !important;
         padding-bottom: 0 !important; }
       html body .site-footer .col-full .footer-widgets .footer-widget-2 .widget:last-of-type {
-        margin-top: 0 !important; }
+        margin-top: 0 !important;
+        padding-bottom: 0 !important; }
       @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
         html body .site-footer .col-full .footer-widgets .footer-widget-2 {
           display: -webkit-box;

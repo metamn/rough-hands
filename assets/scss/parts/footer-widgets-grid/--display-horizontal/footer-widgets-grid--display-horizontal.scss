@@ -1,0 +1,18 @@
+@mixin footer-widgets-grid--display-horizontal {
+	@include flexbox-grid(3, 0px, 0px, $grid-title: false, $iepx: 0px);
+
+	.block {
+		display: flex;
+
+		&:nth-of-type(2) {
+			flex-wrap: wrap;
+		}
+
+		.widget {
+			//@include padding(half, half, half, half);
+			@include margin(half, half, half, half);
+
+			width: 100%;
+		}
+	}
+}
