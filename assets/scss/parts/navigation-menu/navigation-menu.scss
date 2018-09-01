@@ -4,6 +4,15 @@
 	.menu {
 		.menu-item {
 			margin-bottom: 0 !important;
+
+			// If no `.menu-item-object-page` is added also the `Home` will be highlighted not just `Store`
+			// If both `current-menu-item.menu-item-object-page` are added all works fine, except
+			// when a product category is clicked the `Store` menu gets inactivated.
+			&.current-menu-item.menu-item-object-page {
+				a {
+					@include link($type: linethrough, $hover: not-underlined);
+				}
+			}
 		}
 	}
 }

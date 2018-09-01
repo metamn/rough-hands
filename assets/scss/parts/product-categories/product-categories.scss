@@ -1,3 +1,9 @@
 @mixin product-categories {
-	//
+	.cat-item {
+		&.current-cat {
+			a {
+				@include link($type: linethrough, $hover: not-underlined);
+			}
+		}
+	}
 }
