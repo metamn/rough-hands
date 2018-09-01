@@ -1,0 +1,16 @@
+@mixin product-grid--display-horizontal {
+	.woocommerce-loop-product__link {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: end;
+
+		.product-information {
+			max-width: calc(100%  - #{$image-width} - #{$left});
+			margin-left: $left;
+		}
+	}
+
+	.button.product_type_simple.ajax_add_to_cart {
+		margin-left: calc(#{$image-width} + #{$left} + #{$lem});
+	}
+}

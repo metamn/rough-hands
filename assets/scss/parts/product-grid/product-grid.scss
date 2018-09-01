@@ -1,0 +1,5 @@
+@mixin product-grid {
+	@include tablet-landscape {
+		@include product-grid--display-horizontal;
+	}
+}

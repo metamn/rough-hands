@@ -1,4 +1,6 @@
 @mixin product {
+	@include product-grid;
+	
 	.woocommerce-loop-product__link {
 		@include link($type: not-underlined, $hover: not-underlined);
 	}
