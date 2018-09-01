@@ -1,11 +1,17 @@
 @mixin widget-area {
 	.widget {
 		&.widget_product_categories {
-			@include slider('ul', 'li', $product-categories-slider-width, auto);
+			@include mobile {
+				@include widget-area--display-as-slider;
+			}
 
-			@include border(normal, top);
-			@include border(normal, bottom);
-			@include padding(half, no, half, no);
+			@include tablet {
+				@include widget-area--display-as-slider;
+			}
+
+			@include laptop-and-up {
+				@include widget-area--display-as-line;
+			}
 
 			.product-categories {
 				@include product-categories;

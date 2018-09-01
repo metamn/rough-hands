@@ -58,6 +58,7 @@
 
 	// Button, action
 	@if ($variant == 'action') {
+		@include font(product-title);
 		@include scale(small-1);
 		letter-spacing: $letter-spacing-larger;
 		text-transform: uppercase;

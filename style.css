@@ -573,6 +573,9 @@ html {
     html body button,
     html body .button,
     html body input[type='submit'] {
+      font-style: normal;
+      font-weight: normal;
+      font-family: AlternateGothicNo2BT-Regular;
       font-size: 0.8em;
       letter-spacing: 2.5px;
       text-transform: uppercase;
@@ -1351,47 +1354,104 @@ html {
                 padding-right: 1.25em; } }
             html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul li a.prev, html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul li a.next {
               display: none; }
-      html body .site-content .col-full .widget-area .widget.widget_product_categories {
-        width: 100%;
-        overflow-x: auto;
-        overflow-y: hidden;
-        height: auto;
-        border-top: 1px solid;
-        border-bottom: 1px solid; }
-        html body .site-content .col-full .widget-area .widget.widget_product_categories ul {
-          display: table;
-          table-layout: fixed;
-          width: 100%; }
-          html body .site-content .col-full .widget-area .widget.widget_product_categories ul li {
-            width: 8.75em;
-            height: auto;
-            display: table-cell; }
-            @media only screen and (max-width: 767.9px) {
-              html body .site-content .col-full .widget-area .widget.widget_product_categories ul li {
-                padding-right: 1.25em; } }
-            @media only screen and (min-width: 768px) {
-              html body .site-content .col-full .widget-area .widget.widget_product_categories ul li {
-                padding-right: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .site-content .col-full .widget-area .widget.widget_product_categories {
-            padding-top: 0.625em; } }
-        @media only screen and (min-width: 768px) {
-          html body .site-content .col-full .widget-area .widget.widget_product_categories {
-            padding-top: 1.25em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .site-content .col-full .widget-area .widget.widget_product_categories {
-            padding-bottom: 0.625em; } }
-        @media only screen and (min-width: 768px) {
-          html body .site-content .col-full .widget-area .widget.widget_product_categories {
-            padding-bottom: 1.25em; } }
-        html body .site-content .col-full .widget-area .widget.widget_product_categories .product-categories .cat-item.current-cat a {
-          background-color: #fff;
-          color: #000;
-          text-decoration: line-through;
-          transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-          will-change: text-decoration; }
-          html body .site-content .col-full .widget-area .widget.widget_product_categories .product-categories .cat-item.current-cat a:hover, html body .site-content .col-full .widget-area .widget.widget_product_categories .product-categories .cat-item.current-cat a:active {
-            text-decoration: none; }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-content .col-full .widget-area .widget.widget_product_categories {
+          width: 100%;
+          overflow-x: auto;
+          overflow-y: hidden;
+          height: auto;
+          border-top: 1px solid;
+          border-bottom: 1px solid; }
+          html body .site-content .col-full .widget-area .widget.widget_product_categories ul {
+            display: table;
+            table-layout: fixed;
+            width: 100%; }
+            html body .site-content .col-full .widget-area .widget.widget_product_categories ul li {
+              width: 8.75em;
+              height: auto;
+              display: table-cell; } }
+      @media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
+        html body .site-content .col-full .widget-area .widget.widget_product_categories ul li {
+          padding-right: 1.25em; } }
+      @media only screen and (max-width: 767.9px) and (min-width: 768px) {
+        html body .site-content .col-full .widget-area .widget.widget_product_categories ul li {
+          padding-right: 2.5em; } }
+  @media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
+    html body .site-content .col-full .widget-area .widget.widget_product_categories {
+      padding-top: 0.625em; } }
+  @media only screen and (max-width: 767.9px) and (min-width: 768px) {
+    html body .site-content .col-full .widget-area .widget.widget_product_categories {
+      padding-top: 1.25em; } }
+  @media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
+    html body .site-content .col-full .widget-area .widget.widget_product_categories {
+      padding-bottom: 0.625em; } }
+  @media only screen and (max-width: 767.9px) and (min-width: 768px) {
+    html body .site-content .col-full .widget-area .widget.widget_product_categories {
+      padding-bottom: 1.25em; } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        html body .site-content .col-full .widget-area .widget.widget_product_categories {
+          width: 100%;
+          overflow-x: auto;
+          overflow-y: hidden;
+          height: auto;
+          border-top: 1px solid;
+          border-bottom: 1px solid; }
+          html body .site-content .col-full .widget-area .widget.widget_product_categories ul {
+            display: table;
+            table-layout: fixed;
+            width: 100%; }
+            html body .site-content .col-full .widget-area .widget.widget_product_categories ul li {
+              width: 8.75em;
+              height: auto;
+              display: table-cell; } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) and (max-width: 767.9px) {
+        html body .site-content .col-full .widget-area .widget.widget_product_categories ul li {
+          padding-right: 1.25em; } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) and (min-width: 768px) {
+        html body .site-content .col-full .widget-area .widget.widget_product_categories ul li {
+          padding-right: 2.5em; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (max-width: 767.9px) {
+    html body .site-content .col-full .widget-area .widget.widget_product_categories {
+      padding-top: 0.625em; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (min-width: 768px) {
+    html body .site-content .col-full .widget-area .widget.widget_product_categories {
+      padding-top: 1.25em; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (max-width: 767.9px) {
+    html body .site-content .col-full .widget-area .widget.widget_product_categories {
+      padding-bottom: 0.625em; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (min-width: 768px) {
+    html body .site-content .col-full .widget-area .widget.widget_product_categories {
+      padding-bottom: 1.25em; } }
+      @media only screen and (min-width: 1025px) {
+        html body .site-content .col-full .widget-area .widget.widget_product_categories {
+          border-top: 1px solid;
+          position: relative; }
+          html body .site-content .col-full .widget-area .widget.widget_product_categories .product-categories {
+            list-style: none;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            position: absolute;
+            top: -0.625em; }
+            html body .site-content .col-full .widget-area .widget.widget_product_categories .product-categories .cat-item {
+              font-style: normal;
+              font-weight: normal;
+              font-family: AlternateGothicNo2BT-Regular;
+              font-size: 0.8em;
+              letter-spacing: 2.5px;
+              text-transform: uppercase; } }
+      html body .site-content .col-full .widget-area .widget.widget_product_categories .product-categories .cat-item.current-cat a {
+        background-color: #fff;
+        color: #000;
+        text-decoration: line-through;
+        transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+        will-change: text-decoration; }
+        html body .site-content .col-full .widget-area .widget.widget_product_categories .product-categories .cat-item.current-cat a:hover, html body .site-content .col-full .widget-area .widget.widget_product_categories .product-categories .cat-item.current-cat a:active {
+          text-decoration: none; }
     html body .site-footer {
       background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII="); }
       @media only screen and (max-width: 767.9px) {
