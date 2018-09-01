@@ -1,4 +1,6 @@
 @mixin product-title--not-wrapped {
+	// This works fine if the title is not a link.
+	// In case of links the horizontal scrolling is not usable.
 	white-space: nowrap;
 	overflow-x: auto;
 }

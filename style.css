@@ -1124,10 +1124,7 @@ html {
             html body .site-content .col-full .content-area .site-main .products > * {
               width: calc(33.33333% - (((3 - 1) * 1.25em) / 3) - 0px); }
               html body .site-content .col-full .content-area .site-main .products > *:nth-child(3n) {
-                margin-right: 0; }
-            html body .site-content .col-full .content-area .site-main .products .product .woocommerce-loop-product__title {
-              white-space: nowrap;
-              overflow-x: auto; } }
+                margin-right: 0; } }
         html body .site-content .col-full .content-area .site-main .products .product .woocommerce-loop-product__link {
           background-color: #fff;
           color: #000;
