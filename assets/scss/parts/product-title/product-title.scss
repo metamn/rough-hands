@@ -1,0 +1,3 @@
+@mixin product-title {
+	@include text-style(product-title);
+}
