@@ -1,6 +1,6 @@
 @mixin site-footer {
-	@include colors(inverted);
-	@include background-pattern--horizontal-lines-black;
+	@include colors;
+	@include background-pattern--horizontal-lines-thick-white;
 
 	.col-full {
 		.footer-widgets {

@@ -1573,9 +1573,9 @@ html {
         html body .site-content .col-full .widget-area .widget.widget_product_categories .product-categories .cat-item.current-cat a:hover, html body .site-content .col-full .widget-area .widget.widget_product_categories .product-categories .cat-item.current-cat a:active {
           text-decoration: none; }
     html body .site-footer {
-      background-color: #000;
-      color: #fff;
-      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGElEQVQImWNgYGD4jwVjEfyPBWBXiU0QAA7LJ9nOACy2AAAAAElFTkSuQmCC"); }
+      background-color: #fff;
+      color: #000;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVQYlWNgGBrgP5GYeIWDHQAA2JUT7a+Ikh8AAAAASUVORK5CYII="); }
       @media only screen and (min-width: 1025px) {
         html body .site-footer .col-full .footer-widgets {
           display: -webkit-box;
