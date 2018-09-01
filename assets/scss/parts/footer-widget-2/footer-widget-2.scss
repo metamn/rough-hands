@@ -1,12 +1,7 @@
 @mixin footer-widget-2 {
-	.widget {
-		&:first-of-type {
-			margin-bottom: 0 !important;
-			padding-bottom: 0 !important;
-		}
+	@include footer-widget-2--display-vertical;
 
-		&:last-of-type {
-			margin-top: 0 !important;
-		}
+	@include tablet-landscape {
+		@include footer-widget-2--display-horizontal;
 	}
 }
