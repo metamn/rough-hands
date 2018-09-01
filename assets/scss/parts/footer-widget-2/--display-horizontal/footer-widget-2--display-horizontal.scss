@@ -1,12 +1,15 @@
 @mixin footer-widget-2--display-horizontal {
-	display: flex;
-	justify-content: space-between;
-
 	@include colors;
 	@include margin(no, yes, no, yes);
+	@include padding(no, no, yes, no);
+	@include border(normal, all);
+
+	display: flex;
+	justify-content: space-between;
 
 	.widget {
 		@include margin(no, no, no, no);
 		@include padding( no, no, no, no);
+		border: 0;
 	}
 }

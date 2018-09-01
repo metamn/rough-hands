@@ -2,6 +2,8 @@
 	@include colors;
 	@include margin;
 	@include padding;
+	@include border(normal, all);
+	//@include font(bold);
 
 	.widget-title {
 		display: none;
