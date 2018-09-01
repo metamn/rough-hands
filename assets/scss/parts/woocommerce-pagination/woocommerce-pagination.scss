@@ -17,8 +17,11 @@
 				@include padding(half, half, half, half);
 			}
 
-			&:last-of-type {
-				display: none;
+			a {
+				&.prev,
+				&.next {
+					display: none;
+				}
 			}
 		}
 	}

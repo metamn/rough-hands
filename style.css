@@ -1331,7 +1331,7 @@ html {
               html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul li span,
               html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul li a {
                 padding-right: 1.25em; } }
-            html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul li:last-of-type {
+            html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul li a.prev, html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul li a.next {
               display: none; }
       html body .site-content .col-full .widget-area .widget.widget_product_categories {
         width: 100%;
@@ -1505,6 +1505,30 @@ html {
             border-bottom: 1px solid;
             margin-bottom: 0.625em;
             padding-bottom: 0.625em; }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-footer .col-full .footer-widgets .footer-widget-1 .contact {
+          margin-top: 1.25em; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-footer .col-full .footer-widgets .footer-widget-1 .contact {
+          margin-top: 2.5em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-footer .col-full .footer-widgets .footer-widget-1 .contact {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-footer .col-full .footer-widgets .footer-widget-1 .contact {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-footer .col-full .footer-widgets .footer-widget-1 .contact {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-footer .col-full .footer-widgets .footer-widget-1 .contact {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-footer .col-full .footer-widgets .footer-widget-1 .contact {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-footer .col-full .footer-widgets .footer-widget-1 .contact {
+          margin-right: 0; } }
       html body .site-footer .col-full .footer-widgets .footer-widget-2 .widget:first-of-type {
         margin-bottom: 0 !important;
         padding-bottom: 0 !important; }
