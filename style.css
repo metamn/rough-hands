@@ -763,14 +763,11 @@ html {
           display: none; }
       html body .site-header .secondary-navigation .menu-secondary-menu-container .menu .menu-item {
         margin-bottom: 0 !important; }
+        html body .site-header .secondary-navigation .menu-secondary-menu-container .menu .menu-item a {
+          border-bottom: 1px solid;
+          border-color: transparent; }
         html body .site-header .secondary-navigation .menu-secondary-menu-container .menu .menu-item.current-menu-item.menu-item-object-page a {
-          background-color: #000;
-          color: #fff;
-          text-decoration: line-through;
-          transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-          will-change: text-decoration; }
-          html body .site-header .secondary-navigation .menu-secondary-menu-container .menu .menu-item.current-menu-item.menu-item-object-page a:hover, html body .site-header .secondary-navigation .menu-secondary-menu-container .menu .menu-item.current-menu-item.menu-item-object-page a:active {
-            text-decoration: none; }
+          border-color: #000; }
       html body .site-header .secondary-navigation .menu-secondary-menu-container .menu {
         -webkit-box-pack: end;
             -ms-flex-pack: end;
@@ -903,14 +900,11 @@ html {
             display: none; }
         html body .site-header .storefront-primary-navigation .main-navigation .primary-navigation .menu .menu-item {
           margin-bottom: 0 !important; }
+          html body .site-header .storefront-primary-navigation .main-navigation .primary-navigation .menu .menu-item a {
+            border-bottom: 1px solid;
+            border-color: transparent; }
           html body .site-header .storefront-primary-navigation .main-navigation .primary-navigation .menu .menu-item.current-menu-item.menu-item-object-page a {
-            background-color: #000;
-            color: #fff;
-            text-decoration: line-through;
-            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            will-change: text-decoration; }
-            html body .site-header .storefront-primary-navigation .main-navigation .primary-navigation .menu .menu-item.current-menu-item.menu-item-object-page a:hover, html body .site-header .storefront-primary-navigation .main-navigation .primary-navigation .menu .menu-item.current-menu-item.menu-item-object-page a:active {
-              text-decoration: none; }
+            border-color: #000; }
       html body .site-header .storefront-primary-navigation .main-navigation .handheld-navigation {
         border: 1px solid;
         width: 100%;
