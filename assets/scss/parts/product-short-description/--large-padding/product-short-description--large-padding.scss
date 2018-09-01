@@ -1,0 +1,4 @@
+@mixin product-short-description--large-padding {
+	@include margin(no, no, no, yes);
+	@include padding(yes, no, yes, yes);
+}

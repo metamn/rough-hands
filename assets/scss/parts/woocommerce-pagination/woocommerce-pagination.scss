@@ -1,5 +1,5 @@
 @mixin woocommerce-pagination {
-	@include margin(yes, no, no, no);
+	@include margin(yes, no, yes, no);
 	@include colors(inverted);
 
 	display: flex;

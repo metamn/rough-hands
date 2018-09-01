@@ -1,9 +1,16 @@
 @mixin product-short-description {
-	@include margin(no, no, no, yes);
-	@include padding(yes, no, yes, yes);
 	@include border(normal, left);
 
 	@include mobile {
+		@include product-short-description--large-padding;
 		margin-left: calc(#{$lem * 2 - $lem / 4}) !important;
+	}
+
+	@include tablet {
+		@include product-short-description--large-padding;
+	}
+
+	@include laptop-and-up {
+		@include product-short-description--small-padding;
 	}
 }
