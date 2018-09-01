@@ -1,0 +1,10 @@
+@mixin footer-widget-3--display-vertical {
+	.widget {
+		.textwidget {
+			ul {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+		}
+	}
+}

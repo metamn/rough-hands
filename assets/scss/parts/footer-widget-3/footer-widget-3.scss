@@ -1,0 +1,5 @@
+@mixin footer-widget-3 {
+	@include laptop-and-up {
+		@include footer-widget-3--display-vertical;
+	}
+}
