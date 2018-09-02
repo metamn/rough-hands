@@ -1,0 +1,13 @@
+@mixin product-categories--for-slider {
+	.cat-item {
+		a {
+			padding: $lem / 4;
+		}
+
+		&.current-cat {
+			a {
+				@include link($type: linethrough, $hover: not-underlined);
+			}
+		}
+	}
+}

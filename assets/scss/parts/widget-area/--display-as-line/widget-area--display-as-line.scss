@@ -2,19 +2,6 @@
 	width: 100%;
 
 	.product-categories {
-		@include ul;
-
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-
-		.cat-item {
-			@include text-style(action);
-			margin: $lem / 4;
-
-			a {
-				padding: $lem / 4;
-			}
-		}
+		@include product-categories--for-line;
 	}
 }

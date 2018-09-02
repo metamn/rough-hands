@@ -1,5 +1,8 @@
 @mixin widget-area--display-as-slider {
 	@include slider('ul', 'li', $product-categories-slider-width, auto);
-	@include background-pattern--horizontal-lines-white;
 	@include padding(half, no, half, no);
+
+	.product-categories {
+		@include product-categories--for-slider;
+	}
 }

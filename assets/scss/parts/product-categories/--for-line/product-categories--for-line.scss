@@ -1,0 +1,22 @@
+@mixin product-categories--for-line {
+	@include ul;
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	.cat-item {
+		@include text-style(action);
+		margin: $lem / 4;
+
+		a {
+			padding: $lem / 4;
+		}
+
+		&.current-cat {
+			a {
+				@include link($color-scheme: inverted, $type: linethrough, $hover: not-underlined);
+			}
+		}
+	}
+}
