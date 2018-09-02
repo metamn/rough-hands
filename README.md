@@ -5,7 +5,7 @@ Rough Hands - Store Page demo - https://morethemes.baby/rough-hands/
 
 This is a demo page for the Rough Hands online store. It is based on the WordPress WooCommerce plugin and their Storefront e-commerce theme.
 
-Storefront is the default standard for WooCommerce and we are adapting it to the Rough Hands needs using this current child theme.
+Storefront is the default standard for WooCommerce and we are adapting it to the Rough Hands needs with a child theme.
 
 Stick to the standards whenever possible for better performance and future compatibility.
 
@@ -31,7 +31,7 @@ The `Add to cart` button text was changed to `Reserve` with a plugin, following 
 
 Some template parts coming from the parent theme were removed, some new parts were added, and a few configuration parameters were changed.
 
-All these can be found at [inc/class-roughhands-template.php](morethemesbaby/rough-hands/blob/master/inc/class-roughhands-template.p).
+All these can be found at [inc/class-roughhands-template.php](inc/class-roughhands-template.php).
 
 ## Styling
 
