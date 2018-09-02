@@ -1,6 +1,8 @@
+# Rough Hands
+Rough Hands - Store Page demo - https://morethemes.baby/rough-hands/
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Rough Hands](#rough-hands)
   - [Overview](#overview)
@@ -22,9 +24,6 @@
         - [The product on laptops](#the-product-on-laptops)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Rough Hands
-Rough Hands - Store Page demo - https://morethemes.baby/rough-hands/
 
 ## Overview
 
