@@ -1,6 +1,7 @@
 @mixin woocommerce-pagination {
 	@include margin(yes, no, no, no);
-	@include colors(inverted);
+	//@include colors(inverted);
+	@include background-pattern--dotted-white;
 
 	display: flex;
 	justify-content: center;

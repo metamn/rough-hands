@@ -1383,8 +1383,7 @@ html {
   html body .site-content .col-full .content-area .site-main .products .product .product-information .product-short-description {
     padding-bottom: 2.5em; } }
       html body .site-content .col-full .content-area .site-main .woocommerce-pagination {
-        background-color: #000;
-        color: #fff;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==");
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
