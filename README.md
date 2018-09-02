@@ -1,3 +1,28 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Rough Hands](#rough-hands)
+  - [Overview](#overview)
+  - [Content](#content)
+    - [Dynamic](#dynamic)
+    - [Products](#products)
+    - [Menu, Sidebar and Footer](#menu-sidebar-and-footer)
+    - [Add to cart](#add-to-cart)
+  - [Template structure](#template-structure)
+  - [Styling](#styling)
+    - [Node, Gulp, BEM](#node-gulp-bem)
+    - [Naming conventions](#naming-conventions)
+  - [Design](#design)
+    - [Design thinking](#design-thinking)
+    - [Responsiveness](#responsiveness)
+      - [Example: Product design](#example-product-design)
+        - [The product on screens in portrait mode (mobile, tablet)](#the-product-on-screens-in-portrait-mode-mobile-tablet)
+        - [The product on tablet in landscape mode](#the-product-on-tablet-in-landscape-mode)
+        - [The product on laptops](#the-product-on-laptops)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Rough Hands
 Rough Hands - Store Page demo - https://morethemes.baby/rough-hands/
 
@@ -47,7 +72,7 @@ To get a really resposnsive design and clean CSS code we've rebuilt the site's s
 
 ### Node, Gulp, BEM
 
-We use (standard front-end tools)[https://morethemes.baby/2018/05/12/more-themes-baby-is-in-the-loop/] to build and generate the theme style. These technologies are adding the following files and folders to the theme:
+We use [standard front-end tools](https://morethemes.baby/2018/05/12/more-themes-baby-is-in-the-loop/) to build and generate the theme style. These technologies are adding the following files and folders to the theme:
 
 ```
 /assets/
@@ -73,7 +98,7 @@ CSS class names always follow HTML class names: if a HTML element is styled ther
 
 The CSS code structure is pretty straightforward. Inside the `assets/scss` folder you'll find:
 
-* `/framework` - S folder containing a custom CSS framework.
+* `/framework` - The folder containing the custom CSS framework.
 * `/pages` - Styles for pages.
 * `/parts` - Styles for all template parts
 * `/themes` - Settings for this current theme.
@@ -85,7 +110,7 @@ If *Rough Hands* then let the design be a little rough.
 
 I took the courage to use your design as a suggestion and rethink it. My best skills are not replicating a Photoshop comp to HTML and CSS but create unique designs which delivers the message.
 
-Rough Hands, by my understanding, has the following major characteristics:
+Rough Hands, in my understanding, has the following major characteristics:
 
 1. It's *rough*.
 2. It sells things identified mostly by beautiful images.
@@ -103,9 +128,9 @@ These elements are styled according to their order of importance. If an element 
 
 ### Responsiveness
 
-Every component making up the design was rethinked for three device types - mobile, tablet, laptop - and four display modes: mobile portrait, tablet portrait and landscape, laptop landscape.
+Every component making up the design was rethinked for three device types: mobile, tablet, laptop; and four display modes: mobile portrait, tablet portrait and landscape, laptop landscape.
 
-That's why we have as many representations as needed - three for the product design, the site's header, the widgets in the footer; two for the product navigation; and so on.
+That's why we have as many component representations as needed - three for the product design, the site's header, the widgets in the footer; two for the product navigation; and so on.
 
 Making responsiveness so granular are the landmarks of this site's design.
 
