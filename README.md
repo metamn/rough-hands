@@ -1,17 +1,13 @@
 # Rough Hands
-Rough Hands - Store Page demo
+Rough Hands - Store Page demo - https://morethemes.baby/rough-hands/
 
 ## Overview
 
-This is a demo page for the Rough Hands online store.
-
-It is based on the WordPress WooCommerce plugin and their Storefront e-commerce theme.
+This is a demo page for the Rough Hands online store. It is based on the WordPress WooCommerce plugin and their Storefront e-commerce theme.
 
 Storefront is the default standard for WooCommerce and we are adapting it to the Rough Hands needs using this current child theme.
 
-This child theme, again, was inspired by another official child theme, Boutique.
-
-The idea is to stick to the standards whenever possible for better performance and future compatibility.
+Stick to the standards whenever possible for better performance and future compatibility.
 
 ## Content
 
@@ -35,13 +31,11 @@ The `Add to cart` button text was changed to `Reserve` with a plugin, following 
 
 Some template parts coming from the parent theme were removed, some new parts were added, and a few configuration parameters were changed.
 
-All these can be found at `inc/class-roughhands-template.php`.
+All these can be found at [inc/class-roughhands-template.php](morethemesbaby/rough-hands/blob/master/inc/class-roughhands-template.p).
 
 ## Styling
 
-It makes sense for the site's functionality to rely heavily on standard frameworks like Storefront for stability and performance.
-
-And there is built-in support to build upon the parent theme functionality with template hooks, actions and filters.
+It makes sense for the site's functionality to rely heavily on standard frameworks like Storefront for stability and performance. And there is built-in support to build upon the parent theme functionality with template hooks, actions and filters.
 
 None of these are true for the site's styling.
 
@@ -49,13 +43,11 @@ Instead of built-in support what one can do is to overwrite manually the parent 
 
 There are other caveats with the Storefront styling. On responsive design Storefront doesn't makes a difference between how the site looks on tablet / portrait mode (https://imgur.com/a/zW1ylHt) and laptop / landscape mode (https://imgur.com/a/Rx3X6Hn), and, it adds lots of code we don't need on mobile screens (https://imgur.com/a/Pxhu6o8).
 
-To get a clean code we rebuild the site's style from scratch using the same technologies (SASS/SCSS) as the parent theme.
+To get a really resposnsive design and clean CSS code we've rebuilt the site's style from scratch using the same technologies (SASS/SCSS) as the parent theme.
 
 ### Node, Gulp, BEM
 
-We use standard front-end tools to build and generate the theme style. Please check this link for the technologies used and their usage adoption: https://morethemes.baby/2018/05/12/more-themes-baby-is-in-the-loop/
-
-These technologies are adding the following files and folders to the theme:
+We use (standard front-end tools)[https://morethemes.baby/2018/05/12/more-themes-baby-is-in-the-loop/] to build and generate the theme style. These technologies are adding the following files and folders to the theme:
 
 ```
 /assets/
@@ -67,7 +59,7 @@ style.scss
 style.scss.map
 ```
 
-And there is a command to compile the SCSS files into CSS:
+And there is a command to compile the SCSS files into the final CSS:
 
 ```
 gulp
@@ -77,34 +69,56 @@ The documentation for installing and using these technologies is out of scope of
 
 ### Naming conventions
 
-CSS class names always follow HTML class names. This consistency is necessary for clean and maintainable code.
+CSS class names always follow HTML class names: if a HTML element is styled there is always a corresponding, same name CSS component in the `assets/scss/parts` folder. This consistency is necessary for clean and maintainable code.
 
-CSS code structure is pretty straightforward. Inside the `assets/scss` folder you'll find:
+The CSS code structure is pretty straightforward. Inside the `assets/scss` folder you'll find:
 
-* `/framework` - a folder containing a custom CSS framework.
-* `/pages` - styles for pages
-* `/parts` - styles for all template parts
-* `/themes` - settings for this current theme.
+* `/framework` - S folder containing a custom CSS framework.
+* `/pages` - Styles for pages.
+* `/parts` - Styles for all template parts
+* `/themes` - Settings for this current theme.
 
 
 ## Design
 
-If 'Rough Hands' then let the design be a little rough.
+If *Rough Hands* then let the design be a little rough.
 
-I took the courage to use your design as a suggestion and rethink it. My best skills are not replicating a Photoshop comp to HTML and CSS but create unique designs which delivers the brand message.
+I took the courage to use your design as a suggestion and rethink it. My best skills are not replicating a Photoshop comp to HTML and CSS but create unique designs which delivers the message.
 
-Rough Hands has the following major characteristics:
+Rough Hands, by my understanding, has the following major characteristics:
 
-1. It's Rough.
+1. It's *rough*.
 2. It sells things identified mostly by beautiful images.
 3. The images have a relatively small size of 464px each.
 
-The design thinking was driven by the images. On all screens (mobile, tablet, laptop) they are let to be displayed in their original size, unconstrained, to draw the necessary attention by their simple beauty.
+### Design thinking
 
-The remaining space around the image was used to display the other facts about the product we are selling, styled according to their order of importance (as important as with stronger design): product name, price, call to action, and short description.
+The whole design was built around roughness and the small product images.
 
-This spacing of elements, and, the styling of elements according to their importance led to different product design on different types of screens.
+To draw the necessary attention - by their simple beauty - images are displayed in their original size, unconstrained, on all screens.
 
-### The product on screens in portrait mode
+The remaining space around the images was used responsively to display the other facts about the product we are selling.
+
+These elements are styled according to their order of importance. If an element is more important than the other its style is stronger than the others.
+
+### Responsiveness
+
+Every component making up the design was rethinked for three device types - mobile, tablet, laptop - and four display modes: mobile portrait, tablet portrait and landscape, laptop landscape.
+
+That's why we have as many representations as needed - three for the product design, the site's header, the widgets in the footer; two for the product navigation; and so on.
+
+Making responsiveness so granular are the landmarks of this site's design.
+
+#### Example: Product design
+
+##### The product on screens in portrait mode (mobile, tablet)
 
 ![The product on screens in portrait mode](https://i.imgur.com/1gTaWBgl.jpg)
+
+##### The product on tablet in landscape mode
+
+![The product on tablet in landscape mode](https://i.imgur.com/ycfpLEe.jpg)
+
+##### The product on laptops
+
+![The product on tablet in landscape mode](https://i.imgur.com/x71Fhdh.png)
