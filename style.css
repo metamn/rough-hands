@@ -1404,10 +1404,10 @@ html {
             margin-top: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
           html body .site-content .col-full .content-area .site-main .woocommerce-pagination {
-            margin-bottom: 1.25em; } }
+            margin-bottom: 0; } }
         @media only screen and (min-width: 768px) {
           html body .site-content .col-full .content-area .site-main .woocommerce-pagination {
-            margin-bottom: 2.5em; } }
+            margin-bottom: 0; } }
         @media only screen and (max-width: 767.9px) {
           html body .site-content .col-full .content-area .site-main .woocommerce-pagination {
             margin-left: 0; } }
@@ -1439,6 +1439,18 @@ html {
             html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul li + .li,
             html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul li + .li {
               margin-left: 0; }
+          @media only screen and (max-width: 767.9px) {
+            html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul {
+              padding-top: 0.3125em; } }
+          @media only screen and (min-width: 768px) {
+            html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul {
+              padding-top: 0.625em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul {
+              padding-bottom: 0.3125em; } }
+          @media only screen and (min-width: 768px) {
+            html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul {
+              padding-bottom: 0.625em; } }
           html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul li {
             margin-bottom: 0; }
             @media only screen and (max-width: 767.9px) {
@@ -1560,6 +1572,30 @@ html {
       background-color: #fff;
       color: #000;
       background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVQYlWNgGBrgP5GYeIWDHQAA2JUT7a+Ikh8AAAAASUVORK5CYII="); }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-footer {
+          margin-top: 1.25em; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-footer {
+          margin-top: 2.5em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-footer {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-footer {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-footer {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-footer {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .site-footer {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .site-footer {
+          margin-right: 0; } }
       @media only screen and (min-width: 1025px) {
         html body .site-footer .col-full .footer-widgets {
           display: -webkit-box;

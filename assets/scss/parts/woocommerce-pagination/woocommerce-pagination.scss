@@ -1,5 +1,5 @@
 @mixin woocommerce-pagination {
-	@include margin(yes, no, yes, no);
+	@include margin(yes, no, no, no);
 	@include colors(inverted);
 
 	display: flex;
@@ -8,6 +8,7 @@
 	ul {
 		@include ul;
 		@include ul--horizontal;
+		@include padding(quarter, no, quarter, no);
 
 		li {
 			margin-bottom: 0;

@@ -1,4 +1,5 @@
 @mixin site-footer {
+	@include margin(yes, no, no, no);
 	@include colors;
 	@include background-pattern--horizontal-lines-thick-white;
 

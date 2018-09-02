@@ -1,4 +1,48 @@
 @mixin padding($t: yes, $r: yes, $b: yes, $l: yes) {
+	@if ($t == 'quarter') {
+		@include mobile {
+			padding-top: $top-mobile / 4;
+		}
+
+		@include mobile-and-up {
+			padding-top: $top / 4;
+		}
+	}
+
+
+	@if ($b == 'quarter') {
+		@include mobile {
+			padding-bottom: $top-mobile / 4;
+		}
+
+		@include mobile-and-up {
+			padding-bottom: $top / 4;
+		}
+	}
+
+
+	@if ($l == 'quarter') {
+		@include mobile {
+			padding-left: $left-mobile / 4;
+		}
+
+		@include mobile-and-up {
+			padding-left: $left / 4;
+		}
+	}
+
+
+	@if ($r == 'quarter') {
+		@include mobile {
+			padding-right: $left-mobile / 4;
+		}
+
+		@include mobile-and-up {
+			padding-right: $left / 4;
+		}
+	}
+
+
 	@if ($t == 'half') {
 		@include mobile {
 			padding-top: $top-mobile / 2;
