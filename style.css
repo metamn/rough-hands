@@ -1786,8 +1786,7 @@ html {
         border-bottom: 0; }
       html body .site-footer .col-full .footer-widgets .footer-widget-2 .widget:last-of-type {
         border-top: 0;
-        margin-top: 0 !important;
-        padding-bottom: 0 !important; }
+        margin-top: 0 !important; }
       @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
         html body .site-footer .col-full .footer-widgets .footer-widget-2 {
           background-color: #fff;
@@ -1795,10 +1794,7 @@ html {
           border: 1px solid;
           display: -webkit-box;
           display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between; } }
+          display: flex; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (max-width: 767.9px) {
     html body .site-footer .col-full .footer-widgets .footer-widget-2 {
       margin-left: 1.25em; } }
@@ -1823,12 +1819,6 @@ html {
   @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (min-width: 768px) {
     html body .site-footer .col-full .footer-widgets .footer-widget-2 {
       margin-bottom: 0; } }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (max-width: 767.9px) {
-    html body .site-footer .col-full .footer-widgets .footer-widget-2 {
-      padding-bottom: 1.25em; } }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (min-width: 768px) {
-    html body .site-footer .col-full .footer-widgets .footer-widget-2 {
-      padding-bottom: 2.5em; } }
       @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
           html body .site-footer .col-full .footer-widgets .footer-widget-2 .widget {
             border: 0; } }
@@ -1856,6 +1846,9 @@ html {
     @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (min-width: 768px) {
       html body .site-footer .col-full .footer-widgets .footer-widget-2 .widget {
         margin-right: 0; } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+            html body .site-footer .col-full .footer-widgets .footer-widget-2 .widget:last-of-type {
+              padding-left: 0 !important; } }
       @media only screen and (min-width: 1025px) {
         html body .site-footer .col-full .footer-widgets .footer-widget-3 .widget .textwidget ul {
           -webkit-box-orient: vertical;
