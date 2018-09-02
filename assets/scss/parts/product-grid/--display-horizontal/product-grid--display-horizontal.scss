@@ -11,6 +11,6 @@
 	}
 
 	.button {
-		margin-left: calc(#{$image-width} + #{$left} + #{$lem});
+		margin-left: calc(#{$image-width} + #{$left});
 	}
 }

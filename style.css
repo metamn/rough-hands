@@ -1049,9 +1049,8 @@ html {
       @media only screen and (min-width: 768px) {
         html body .site-content .col-full {
           margin-right: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .site-content .col-full .content-area .site-main .woocommerce-products-header {
-          display: none; } }
+      html body .site-content .col-full .content-area .site-main .woocommerce-products-header {
+        display: none; }
       html body .site-content .col-full .content-area .site-main .products {
         list-style: none; }
 
@@ -1137,10 +1136,6 @@ html {
               width: calc(33.33333% - (((3 - 1) * 1.25em) / 3) - 0px); }
               html body .site-content .col-full .content-area .site-main .products > *:nth-child(3n) {
                 margin-right: 0; } }
-
-@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
-  html body .site-content .col-full .content-area .site-main .products .product .button {
-    margin-left: 0.625em; } }
         @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
           html body .site-content .col-full .content-area .site-main .products .product .woocommerce-loop-product__link {
             display: -webkit-box;
@@ -1155,7 +1150,7 @@ html {
               max-width: calc(100%  - 464px - 2.5em);
               margin-left: 2.5em; }
           html body .site-content .col-full .content-area .site-main .products .product .button {
-            margin-left: calc(464px + 2.5em + 1.25em); } }
+            margin-left: calc(464px + 2.5em); } }
         @media only screen and (min-width: 1025px) {
           html body .site-content .col-full .content-area .site-main .products .product .product-information {
             display: -webkit-box;
