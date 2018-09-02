@@ -1,6 +1,7 @@
 @mixin widget-area--display-as-line {
 	@include border(normal, top);
 
+	border-width: 2px;
 	position: relative;
 
 	.product-categories {
