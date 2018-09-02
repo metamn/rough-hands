@@ -1,15 +1,22 @@
 @mixin woocommerce-pagination {
 	@include margin(yes, no, no, no);
-	//@include colors(inverted);
-	@include background-pattern--dotted-white;
+	@include border(normal, top);
+
+	@include mobile {
+		margin: $lem * 3 0 $lem;
+	}
 
 	display: flex;
 	justify-content: center;
+	position: relative;
 
 	ul {
 		@include ul;
 		@include ul--horizontal;
 		@include padding(quarter, no, quarter, no);
+
+		position: absolute;
+		top: -$lem;
 
 		li {
 			margin-bottom: 0;
