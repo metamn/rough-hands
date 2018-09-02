@@ -25,6 +25,13 @@
 					display: none;
 				}
 			}
+
+			span {
+				&.current {
+					@include colors(default);
+					@include border(normal, all);
+				}
+			}
 		}
 	}
 }

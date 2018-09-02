@@ -1383,7 +1383,7 @@ html {
   html body .site-content .col-full .content-area .site-main .products .product .product-information .product-short-description {
     padding-bottom: 2.5em; } }
       html body .site-content .col-full .content-area .site-main .woocommerce-pagination {
-        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==");
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVQYlWNgYGD4j4TxAuorHAU4AQCmnQj4PLxr5gAAAABJRU5ErkJggg==");
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1481,6 +1481,10 @@ html {
                 padding-right: 1.25em; } }
             html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul li a.prev, html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul li a.next {
               display: none; }
+            html body .site-content .col-full .content-area .site-main .woocommerce-pagination ul li span.current {
+              background-color: #fff;
+              color: #000;
+              border: 1px solid; }
       html body .site-content .col-full .widget-area {
         background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAEUlEQVQYlWNgGBrgP5F4+AAAuVIJ9yGdIxkAAAAASUVORK5CYII=");
         height: 3.75em;
