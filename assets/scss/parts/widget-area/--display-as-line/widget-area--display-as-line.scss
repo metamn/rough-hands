@@ -1,8 +1,5 @@
 @mixin widget-area--display-as-line {
-	@include border(normal, top);
-
-	border-width: 2px;
-	position: relative;
+	width: 100%;
 
 	.product-categories {
 		@include ul;
@@ -11,11 +8,13 @@
 		display: flex;
 		justify-content: space-between;
 
-		position: absolute;
-		top: calc(-#{$lem / 2 + $lem / 8});
-
 		.cat-item {
 			@include text-style(action);
+			margin: $lem / 4;
+
+			a {
+				padding: $lem / 4;
+			}
 		}
 	}
 }

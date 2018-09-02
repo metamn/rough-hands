@@ -1,15 +1,14 @@
 @mixin widget-area {
+	@include background-pattern--horizontal-lines-white;
+	height: $lem * 3;
+
 	.widget {
 		&.widget_product_categories {
 			@include mobile {
 				@include widget-area--display-as-slider;
 			}
 
-			@include tablet {
-				@include widget-area--display-as-slider;
-			}
-
-			@include laptop-and-up {
+			@include mobile-and-up {
 				@include widget-area--display-as-line;
 			}
 
@@ -17,5 +16,9 @@
 				@include product-categories;
 			}
 		}
+	}
+
+	@include mobile-and-up {
+		@include widget-area--with-border;
 	}
 }

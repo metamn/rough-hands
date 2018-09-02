@@ -1,0 +1,6 @@
+@mixin widget-area--with-border {
+	@include background-pattern--horizontal-lines-white;
+	height: $lem * 3;
+	display: flex;
+	align-items: center;
+}
