@@ -146,3 +146,19 @@ Making responsiveness so granular are the landmarks of this site's design.
 ##### The product on laptops
 
 ![The product on tablet in landscape mode](https://i.imgur.com/x71Fhdh.png)
+
+## Code quality
+
+### WordPress
+
+[NS Theme Check](https://github.com/patilswapnilv/ns-theme-check) reports no errors on code and documentation
+
+![NS Theme Check report](https://i.imgur.com/RjV3wQN.png)
+
+### SCSS / CSS
+
+[Stylelint](https://stylelint.io/) reports one error "Unexpected unit" on the `flexbox-grid` component, which can be fixed.
+
+And reports several "Selector should be written in lowercase with hyphens" and "Unexpected vendor-prefix" errors coming from third parties like the `Storefront` theme and `normalize.css` which can't be fixed.  
+
+![Styleint report](https://i.imgur.com/WeCrlUz.png)
